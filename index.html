@@ -6,102 +6,471 @@
 
   <title>BBC Trust | Charitable Trust in Visakhapatnam</title>
 
-  <meta name="description" content="BBC Trust supports education, healthcare and community welfare activities in Andhra Pradesh."/>
+  <meta name="description" content="BBC Trust supports education, healthcare, social welfare and community development activities in Andhra Pradesh."/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body{
+
+    *{
       margin:0;
-      font-family:Arial, sans-serif;
-      background:#f5f7fa;
-      color:#222;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    header{
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f5f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      background:#ffffff;
+      padding:18px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#0b4d8c;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+    }
+
+    .nav-links a{
+      color:#222;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#0b4d8c;
+    }
+
+    /* HERO */
+
+    .hero{
+      background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+      color:white;
+    }
+
+    .hero-content{
+      max-width:850px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+      font-weight:700;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:35px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:15px 35px;
+      border-radius:50px;
+      font-size:16px;
+      font-weight:600;
+      transition:0.3s;
+      display:inline-block;
+    }
+
+    .btn-primary{
       background:#0b4d8c;
       color:white;
-      padding:60px 20px;
+    }
+
+    .btn-primary:hover{
+      background:#083866;
+    }
+
+    .btn-secondary{
+      background:white;
+      color:#0b4d8c;
+    }
+
+    .btn-secondary:hover{
+      background:#e9eef5;
+    }
+
+    /* SECTION */
+
+    section{
+      padding:90px 7%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:40px;
+      color:#0b4d8c;
+      margin-bottom:15px;
+    }
+
+    .section-title p{
+      color:#666;
+      max-width:700px;
+      margin:auto;
+    }
+
+    /* ABOUT */
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:20px;
+    }
+
+    .about-text h3{
+      font-size:32px;
+      margin-bottom:20px;
+      color:#0b4d8c;
+    }
+
+    /* PROGRAMS */
+
+    .programs-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .program-card{
+      background:white;
+      padding:35px 25px;
+      border-radius:18px;
+      text-align:center;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .program-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .program-card h3{
+      margin:20px 0 15px;
+      color:#0b4d8c;
+    }
+
+    .program-icon{
+      font-size:50px;
+    }
+
+    /* STATS */
+
+    .stats{
+      background:#0b4d8c;
+      color:white;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:30px;
       text-align:center;
     }
 
-    header h1{
+    .stat-box h2{
       font-size:48px;
       margin-bottom:10px;
     }
 
-    header p{
-      font-size:20px;
-    }
+    /* CTA */
 
-    section{
-      padding:50px 20px;
-      max-width:1000px;
-      margin:auto;
-    }
-
-    .card-container{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-    }
-
-    .card{
+    .cta{
+      text-align:center;
       background:white;
-      padding:25px;
-      border-radius:12px;
-      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+      border-radius:25px;
+      padding:70px 30px;
+      box-shadow:0 5px 25px rgba(0,0,0,0.08);
     }
+
+    .cta h2{
+      font-size:42px;
+      margin-bottom:20px;
+      color:#0b4d8c;
+    }
+
+    /* FOOTER */
 
     footer{
-      background:#111;
-      color:white;
+      background:#111827;
+      color:#d1d5db;
       text-align:center;
-      padding:20px;
+      padding:35px 20px;
+      margin-top:80px;
     }
+
+    footer h3{
+      color:white;
+      margin-bottom:15px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .section-title h2{
+        font-size:32px;
+      }
+
+      .cta h2{
+        font-size:32px;
+      }
+
+    }
+
   </style>
+
 </head>
 
 <body>
 
-<header>
-  <h1>BBC Trust</h1>
-  <p>Supporting Education, Healthcare & Community Welfare</p>
-</header>
+  <!-- NAVBAR -->
 
-<section>
-  <h2>About Us</h2>
+  <nav>
 
-  <p>
-    BBC Trust is dedicated to supporting communities through education,
-    healthcare, social welfare and charitable activities across Andhra Pradesh.
-  </p>
-</section>
+    <div class="logo">BBC Trust</div>
 
-<section>
-  <h2>Our Programs</h2>
-
-  <div class="card-container">
-
-    <div class="card">
-      <h3>Education Support</h3>
-      <p>Helping students with educational support and awareness programs.</p>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Programs</a>
+      <a href="#">Activities</a>
+      <a href="#">Donate</a>
+      <a href="#">Contact</a>
     </div>
 
-    <div class="card">
-      <h3>Healthcare Services</h3>
-      <p>Conducting medical camps and community healthcare initiatives.</p>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Empowering Communities Through Service</h1>
+
+      <p>
+        BBC Trust supports education, healthcare, social welfare and community
+        development initiatives across Andhra Pradesh.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Donate Now</a>
+        <a href="#" class="btn btn-secondary">Become Volunteer</a>
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>Community Welfare</h3>
-      <p>Supporting families and communities through social welfare activities.</p>
+  </section>
+
+  <!-- ABOUT -->
+
+  <section>
+
+    <div class="section-title">
+      <h2>About BBC Trust</h2>
+      <p>
+        We are committed to supporting underprivileged communities through
+        charitable activities, healthcare services and educational support programs.
+      </p>
     </div>
 
-  </div>
-</section>
+    <div class="about">
 
-<footer>
-  <p>© 2026 BBC Trust. All Rights Reserved.</p>
-</footer>
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust Community Service">
+
+      <div class="about-text">
+
+        <h3>Creating Positive Impact in Society</h3>
+
+        <p>
+          BBC Trust works towards community welfare by organizing social awareness
+          programs, educational initiatives, medical camps and support activities
+          for families and children in need.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROGRAMS -->
+
+  <section>
+
+    <div class="section-title">
+      <h2>Our Programs</h2>
+      <p>
+        We focus on sustainable community development and social support initiatives.
+      </p>
+    </div>
+
+    <div class="programs-grid">
+
+      <div class="program-card">
+        <div class="program-icon">📘</div>
+        <h3>Education Support</h3>
+        <p>Helping students through educational support and awareness programs.</p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-icon">🏥</div>
+        <h3>Healthcare Services</h3>
+        <p>Organizing medical camps and healthcare initiatives for communities.</p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-icon">🍛</div>
+        <h3>Food Distribution</h3>
+        <p>Providing food and support to families during difficult situations.</p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-icon">🤝</div>
+        <h3>Community Welfare</h3>
+        <p>Supporting social welfare and community development activities.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STATS -->
+
+  <section class="stats">
+
+    <div class="stats-grid">
+
+      <div class="stat-box">
+        <h2>1200+</h2>
+        <p>Families Supported</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>300+</h2>
+        <p>Students Helped</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>50+</h2>
+        <p>Medical Camps</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>100+</h2>
+        <p>Volunteers</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section>
+
+    <div class="cta">
+
+      <h2>Support Our Mission</h2>
+
+      <p>
+        Your contribution helps us continue supporting communities through
+        education, healthcare and social welfare initiatives.
+      </p>
+
+      <br><br>
+
+      <a href="#" class="btn btn-primary">Donate Today</a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h3>BBC Trust</h3>
+
+    <p>
+      Supporting Communities Through Service
+    </p>
+
+    <br>
+
+    <p>
+      © 2026 BBC Trust. All Rights Reserved.
+    </p>
+
+  </footer>
 
 </body>
 </html>
