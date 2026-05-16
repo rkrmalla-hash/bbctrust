@@ -1,475 +1,520 @@
+# Replace Entire `about.html` With This Code
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>BBC Trust | Charitable Trust in Visakhapatnam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="BBC Trust supports education, healthcare, social welfare and community development activities in Andhra Pradesh."/>
+<title>About BBC Trust | Charitable Trust in Visakhapatnam</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Learn about BBC Trust, a charitable organization supporting education, healthcare and community welfare activities in Andhra Pradesh.">
 
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+<style>
 
-    body{
-      font-family:'Poppins',sans-serif;
-      background:#f5f7fb;
-      color:#222;
-      line-height:1.6;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    a{
-      text-decoration:none;
-    }
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f5f7fb;
+  color:#222;
+  line-height:1.7;
+}
 
-    /* NAVBAR */
+/* HEADER */
 
-    nav{
-      background:#ffffff;
-      padding:18px 7%;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      position:sticky;
-      top:0;
-      z-index:1000;
-      box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    }
+header{
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
 
-    .logo{
-      font-size:28px;
-      font-weight:700;
-      color:#0b4d8c;
-    }
+header h1{
+  font-size:58px;
+  margin-bottom:20px;
+}
 
-    .nav-links{
-      display:flex;
-      gap:28px;
-    }
+header p{
+  max-width:800px;
+  margin:auto;
+  font-size:20px;
+}
 
-    .nav-links a{
-      color:#222;
-      font-weight:500;
-      transition:0.3s;
-    }
+/* SECTION */
 
-    .nav-links a:hover{
-      color:#0b4d8c;
-    }
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding:80px 0;
+}
 
-    /* HERO */
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
 
-    .hero{
-      background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-      url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1600&auto=format&fit=crop');
-      background-size:cover;
-      background-position:center;
-      min-height:90vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:20px;
-      color:white;
-    }
+.section-title h2{
+  color:#0b4d8c;
+  font-size:40px;
+  margin-bottom:15px;
+}
 
-    .hero-content{
-      max-width:850px;
-    }
+.section-title p{
+  max-width:750px;
+  margin:auto;
+  color:#666;
+}
 
-    .hero h1{
-      font-size:60px;
-      margin-bottom:20px;
-      font-weight:700;
-    }
+/* ABOUT GRID */
 
-    .hero p{
-      font-size:22px;
-      margin-bottom:35px;
-    }
+.about-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:50px;
+  align-items:center;
+}
 
-    .hero-buttons{
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      flex-wrap:wrap;
-    }
+.about-grid img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.12);
+}
 
-    .btn{
-      padding:15px 35px;
-      border-radius:50px;
-      font-size:16px;
-      font-weight:600;
-      transition:0.3s;
-      display:inline-block;
-    }
+.about-content h3{
+  color:#0b4d8c;
+  font-size:32px;
+  margin-bottom:20px;
+}
 
-    .btn-primary{
-      background:#0b4d8c;
-      color:white;
-    }
+.about-content p{
+  margin-bottom:20px;
+}
 
-    .btn-primary:hover{
-      background:#083866;
-    }
+/* BOX GRID */
 
-    .btn-secondary{
-      background:white;
-      color:#0b4d8c;
-    }
+.box-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
 
-    .btn-secondary:hover{
-      background:#e9eef5;
-    }
+.info-box{
+  background:white;
+  padding:35px 25px;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
 
-    /* SECTION */
+.info-box:hover{
+  transform:translateY(-8px);
+}
 
-    section{
-      padding:90px 7%;
-    }
+.info-box h3{
+  color:#0b4d8c;
+  margin-bottom:15px;
+}
 
-    .section-title{
-      text-align:center;
-      margin-bottom:50px;
-    }
+/* CERTIFICATE GALLERY */
 
-    .section-title h2{
-      font-size:40px;
-      color:#0b4d8c;
-      margin-bottom:15px;
-    }
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
 
-    .section-title p{
-      color:#666;
-      max-width:700px;
-      margin:auto;
-    }
+.card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
 
-    /* ABOUT */
+.card:hover{
+  transform:translateY(-8px);
+}
 
-    .about{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:50px;
-      align-items:center;
-    }
+.card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
 
-    .about img{
-      width:100%;
-      border-radius:20px;
-    }
+.card-content{
+  padding:20px;
+}
 
-    .about-text h3{
-      font-size:32px;
-      margin-bottom:20px;
-      color:#0b4d8c;
-    }
+.card-content h3{
+  color:#0b4d8c;
+  margin-bottom:10px;
+}
 
-    /* PROGRAMS */
+/* FOOTER */
 
-    .programs-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:30px;
-    }
+footer{
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:50px;
+}
 
-    .program-card{
-      background:white;
-      padding:35px 25px;
-      border-radius:18px;
-      text-align:center;
-      box-shadow:0 5px 20px rgba(0,0,0,0.08);
-      transition:0.3s;
-    }
+@media(max-width:768px){
 
-    .program-card:hover{
-      transform:translateY(-8px);
-    }
+  header h1{
+    font-size:40px;
+  }
 
-    .program-card h3{
-      margin:20px 0 15px;
-      color:#0b4d8c;
-    }
+  header p{
+    font-size:18px;
+  }
 
-    .program-icon{
-      font-size:50px;
-    }
+  .section-title h2{
+    font-size:32px;
+  }
 
-    /* STATS */
+}
 
-    .stats{
-      background:#0b4d8c;
-      color:white;
-    }
-
-    .stats-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:30px;
-      text-align:center;
-    }
-
-    .stat-box h2{
-      font-size:48px;
-      margin-bottom:10px;
-    }
-
-    /* CTA */
-
-    .cta{
-      text-align:center;
-      background:white;
-      border-radius:25px;
-      padding:70px 30px;
-      box-shadow:0 5px 25px rgba(0,0,0,0.08);
-    }
-
-    .cta h2{
-      font-size:42px;
-      margin-bottom:20px;
-      color:#0b4d8c;
-    }
-
-    /* FOOTER */
-
-    footer{
-      background:#111827;
-      color:#d1d5db;
-      text-align:center;
-      padding:35px 20px;
-      margin-top:80px;
-    }
-
-    footer h3{
-      color:white;
-      margin-bottom:15px;
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px){
-
-      nav{
-        flex-direction:column;
-        gap:15px;
-      }
-
-      .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-      }
-
-      .hero h1{
-        font-size:42px;
-      }
-
-      .hero p{
-        font-size:18px;
-      }
-
-      .section-title h2{
-        font-size:32px;
-      }
-
-      .cta h2{
-        font-size:32px;
-      }
-
-    }
-
-  </style>
+</style>
 
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
+<!-- HEADER -->
 
-  <nav>
+<header>
 
-  <div class="logo">BBC Trust</div>
+  <h1>About BBC Trust</h1>
 
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="programs.html">Programs</a>
-    <a href="activities.html">Activities</a>
-    <a href="donate.html">Donate</a>
-    <a href="contact.html">Contact</a>
+  <p>
+    Dedicated to supporting communities through education, healthcare,
+    social welfare and charitable service initiatives across Andhra Pradesh.
+  </p>
+
+</header>
+
+<!-- ABOUT -->
+
+<section class="container">
+
+  <div class="section-title">
+
+    <h2>Who We Are</h2>
+
+    <p>
+      BBC Trust (Bapu Bhushanam Charitable Trust) is a registered charitable organization
+      committed to improving the lives of individuals and communities through meaningful social service activities.
+    </p>
+
   </div>
 
-</nav>
-  <!-- HERO -->
+  <div class="about-grid">
 
-  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust Community Service">
 
-    <div class="hero-content">
+    <div class="about-content">
 
-      <h1>Empowering Communities Through Service</h1>
+      <h3>Serving Society With Compassion</h3>
 
       <p>
-        BBC Trust supports education, healthcare, social welfare and community
-        development initiatives across Andhra Pradesh.
+        BBC Trust works towards community development by supporting education,
+        healthcare services, awareness programs and social welfare initiatives.
       </p>
 
-      <div class="hero-buttons">
-        <a href="#" class="btn btn-primary">Donate Now</a>
-        <a href="#" class="btn btn-secondary">Become Volunteer</a>
-      </div>
+      <p>
+        Our goal is to create a positive social impact by helping underprivileged
+        families, students and communities through charitable activities and
+        support programs.
+      </p>
+
+      <p>
+        We believe that collective support and community participation can help
+        build a healthier, educated and empowered society.
+      </p>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- ABOUT -->
+</section>
 
-  <section>
+<!-- TRUST REGISTRATION -->
 
-    <div class="section-title">
-      <h2>About BBC Trust</h2>
+<section class="container">
+
+  <div class="section-title">
+
+    <h2>Trust Registration Details</h2>
+
+    <p>
+      BBC Trust is a registered charitable organization committed to serving
+      communities through social welfare, educational and healthcare initiatives.
+    </p>
+
+  </div>
+
+  <div class="box-grid">
+
+    <div class="info-box">
+
+      <h3>Registered Trust Name</h3>
+
       <p>
-        We are committed to supporting underprivileged communities through
-        charitable activities, healthcare services and educational support programs.
+        Bapu Bhushanam Charitable Trust
       </p>
+
     </div>
 
-    <div class="about">
+    <div class="info-box">
 
-      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust Community Service">
+      <h3>Registration Number</h3>
 
-      <div class="about-text">
+      <p>
+        375 / 2010
+      </p>
 
-        <h3>Creating Positive Impact in Society</h3>
+    </div>
+
+    <div class="info-box">
+
+      <h3>Established Year</h3>
+
+      <p>
+        2010
+      </p>
+
+    </div>
+
+    <div class="info-box">
+
+      <h3>Location</h3>
+
+      <p>
+        Visakhapatnam, Andhra Pradesh, India
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MISSION -->
+
+<section class="container">
+
+  <div class="section-title">
+
+    <h2>Our Vision & Mission</h2>
+
+    <p>
+      Building stronger communities through service, support and social responsibility.
+    </p>
+
+  </div>
+
+  <div class="box-grid">
+
+    <div class="info-box">
+
+      <h3>Our Vision</h3>
+
+      <p>
+        To create a compassionate society where every individual has access
+        to education, healthcare and community support.
+      </p>
+
+    </div>
+
+    <div class="info-box">
+
+      <h3>Our Mission</h3>
+
+      <p>
+        To conduct impactful charitable programs that support communities,
+        families and individuals in need across Andhra Pradesh.
+      </p>
+
+    </div>
+
+    <div class="info-box">
+
+      <h3>Community Support</h3>
+
+      <p>
+        We focus on educational support, healthcare awareness, food assistance
+        and social welfare initiatives for community development.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- OBJECTIVES -->
+
+<section class="container">
+
+  <div class="section-title">
+
+    <h2>Our Objectives</h2>
+
+    <p>
+      BBC Trust works towards community development through charitable
+      and social welfare activities.
+    </p>
+
+  </div>
+
+  <div class="box-grid">
+
+    <div class="info-box">
+
+      <h3>Educational Support</h3>
+
+      <p>
+        Supporting students and educational awareness programs for
+        underprivileged communities.
+      </p>
+
+    </div>
+
+    <div class="info-box">
+
+      <h3>Healthcare Services</h3>
+
+      <p>
+        Conducting medical camps, health awareness programs and
+        healthcare support activities.
+      </p>
+
+    </div>
+
+    <div class="info-box">
+
+      <h3>Social Welfare</h3>
+
+      <p>
+        Helping poor and needy individuals through charitable and
+        welfare initiatives.
+      </p>
+
+    </div>
+
+    <div class="info-box">
+
+      <h3>Community Development</h3>
+
+      <p>
+        Promoting public welfare activities for the betterment of society
+        and local communities.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CERTIFICATES -->
+
+<section class="container">
+
+  <div class="section-title">
+
+    <h2>Registration Certificates</h2>
+
+    <p>
+      Official registration documents and trust certification details.
+    </p>
+
+  </div>
+
+  <div class="gallery">
+
+    <div class="card">
+
+      <img src="images/certificate1.jpg" alt="BBC Trust Registration Certificate">
+
+      <div class="card-content">
+
+        <h3>Trust Registration Certificate</h3>
 
         <p>
-          BBC Trust works towards community welfare by organizing social awareness
-          programs, educational initiatives, medical camps and support activities
-          for families and children in need.
+          Official registration certificate of Bapu Bhushanam Charitable Trust.
         </p>
 
       </div>
 
     </div>
 
-  </section>
+    <div class="card">
 
-  <!-- PROGRAMS -->
+      <img src="images/certificate2.jpg" alt="BBC Trust Trust Deed">
 
-  <section>
+      <div class="card-content">
 
-    <div class="section-title">
-      <h2>Our Programs</h2>
-      <p>
-        We focus on sustainable community development and social support initiatives.
-      </p>
-    </div>
+        <h3>Trust Deed Document</h3>
 
-    <div class="programs-grid">
+        <p>
+          Registered trust deed and official legal documentation.
+        </p>
 
-      <div class="program-card">
-        <div class="program-icon">📘</div>
-        <h3>Education Support</h3>
-        <p>Helping students through educational support and awareness programs.</p>
-      </div>
-
-      <div class="program-card">
-        <div class="program-icon">🏥</div>
-        <h3>Healthcare Services</h3>
-        <p>Organizing medical camps and healthcare initiatives for communities.</p>
-      </div>
-
-      <div class="program-card">
-        <div class="program-icon">🍛</div>
-        <h3>Food Distribution</h3>
-        <p>Providing food and support to families during difficult situations.</p>
-      </div>
-
-      <div class="program-card">
-        <div class="program-icon">🤝</div>
-        <h3>Community Welfare</h3>
-        <p>Supporting social welfare and community development activities.</p>
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- STATS -->
+</section>
 
-  <section class="stats">
+<!-- FOOTER -->
 
-    <div class="stats-grid">
+<footer>
 
-      <div class="stat-box">
-        <h2>1200+</h2>
-        <p>Families Supported</p>
-      </div>
+  <p>© 2026 BBC Trust. All Rights Reserved.</p>
 
-      <div class="stat-box">
-        <h2>300+</h2>
-        <p>Students Helped</p>
-      </div>
-
-      <div class="stat-box">
-        <h2>50+</h2>
-        <p>Medical Camps</p>
-      </div>
-
-      <div class="stat-box">
-        <h2>100+</h2>
-        <p>Volunteers</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CTA -->
-
-  <section>
-
-    <div class="cta">
-
-      <h2>Support Our Mission</h2>
-
-      <p>
-        Your contribution helps us continue supporting communities through
-        education, healthcare and social welfare initiatives.
-      </p>
-
-      <br><br>
-
-      <a href="#" class="btn btn-primary">Donate Today</a>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <h3>BBC Trust</h3>
-
-    <p>
-      Supporting Communities Through Service
-    </p>
-
-    <br>
-
-    <p>
-      © 2026 BBC Trust. All Rights Reserved.
-    </p>
-
-  </footer>
+</footer>
 
 </body>
 </html>
+```
+
+## Final Step
+
+After replacing:
+
+* Click `Commit changes`
+* Refresh your website
+* Open `about.html`
+
+## Important
+
+Upload your certificate images into:
+
+```text
+images/
+```
+
+And name them:
+
+```text
+certificate1.jpg
+certificate2.jpg
+```
