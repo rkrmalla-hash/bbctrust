@@ -1,4 +1,321 @@
-<!-- TRUST REGISTRATION SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About BBC Trust | Charitable Trust in Visakhapatnam</title>
+
+<meta name="description" content="Learn about BBC Trust, a charitable organization supporting education, healthcare and community welfare activities in Andhra Pradesh.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f5f7fb;
+  color:#222;
+  line-height:1.7;
+}
+
+/* NAVBAR */
+
+nav{
+  background:#ffffff;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#0b4d8c;
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#222;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#0b4d8c;
+}
+
+/* HEADER */
+
+header{
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+
+header h1{
+  font-size:58px;
+  margin-bottom:20px;
+}
+
+header p{
+  max-width:800px;
+  margin:auto;
+  font-size:20px;
+}
+
+/* SECTION */
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding:80px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  color:#0b4d8c;
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.section-title p{
+  max-width:750px;
+  margin:auto;
+  color:#666;
+}
+
+/* ABOUT GRID */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:50px;
+  align-items:center;
+}
+
+.about-grid img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.12);
+}
+
+.about-content h3{
+  color:#0b4d8c;
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.about-content p{
+  margin-bottom:20px;
+}
+
+/* BOX GRID */
+
+.box-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.info-box{
+  background:white;
+  padding:35px 25px;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.info-box:hover{
+  transform:translateY(-8px);
+}
+
+.info-box h3{
+  color:#0b4d8c;
+  margin-bottom:15px;
+}
+
+/* CERTIFICATE GALLERY */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:20px;
+}
+
+.card-content h3{
+  color:#0b4d8c;
+  margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  header h1{
+    font-size:40px;
+  }
+
+  header p{
+    font-size:18px;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+  <div class="logo">BBC Trust</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="activities.html">Activities</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</nav>
+
+<!-- HEADER -->
+
+<header>
+
+  <h1>About BBC Trust</h1>
+
+  <p>
+    Dedicated to supporting communities through education, healthcare,
+    social welfare and charitable service initiatives across Andhra Pradesh.
+  </p>
+
+</header>
+
+<!-- ABOUT -->
+
+<section class="container">
+
+  <div class="section-title">
+
+    <h2>Who We Are</h2>
+
+    <p>
+      BBC Trust (Bapu Bhushanam Charitable Trust) is a registered charitable organization
+      committed to improving the lives of individuals and communities through meaningful social service activities.
+    </p>
+
+  </div>
+
+  <div class="about-grid">
+
+    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust Community Service">
+
+    <div class="about-content">
+
+      <h3>Serving Society With Compassion</h3>
+
+      <p>
+        BBC Trust works towards community development by supporting education,
+        healthcare services, awareness programs and social welfare initiatives.
+      </p>
+
+      <p>
+        Our goal is to create a positive social impact by helping underprivileged
+        families, students and communities through charitable activities and
+        support programs.
+      </p>
+
+      <p>
+        We believe that collective support and community participation can help
+        build a healthier, educated and empowered society.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TRUST REGISTRATION -->
 
 <section class="container">
 
@@ -59,7 +376,7 @@
 
 </section>
 
-<!-- OBJECTIVES SECTION -->
+<!-- OBJECTIVES -->
 
 <section class="container">
 
@@ -124,7 +441,7 @@
 
 </section>
 
-<!-- CERTIFICATE SECTION -->
+<!-- CERTIFICATES -->
 
 <section class="container">
 
@@ -175,3 +492,14 @@
   </div>
 
 </section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>© 2026 BBC Trust. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
