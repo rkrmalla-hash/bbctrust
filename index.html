@@ -1,3 +1,6 @@
+# Replace Entire `index.html` With This Code
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +8,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About BBC Trust | Charitable Trust in Visakhapatnam</title>
+<title>BBC Trust | Charitable Trust in Visakhapatnam</title>
 
-<meta name="description" content="Learn about BBC Trust, a charitable organization supporting education, healthcare and community welfare activities in Andhra Pradesh.">
+<meta name="description" content="BBC Trust is a charitable organization in Visakhapatnam supporting education, healthcare, social welfare and community development initiatives across Andhra Pradesh.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -26,27 +29,78 @@ body{
   line-height:1.7;
 }
 
-/* HEADER */
+/* NAVBAR */
 
-header{
+nav{
+  background:#0b4d8c;
+  padding:18px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+nav h2{
+  color:white;
+  font-size:28px;
+}
+
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  opacity:0.8;
+}
+
+/* HERO */
+
+.hero{
   background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
   url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop');
   background-size:cover;
   background-position:center;
   color:white;
   text-align:center;
-  padding:120px 20px;
+  padding:140px 20px;
 }
 
-header h1{
-  font-size:58px;
+.hero h1{
+  font-size:60px;
   margin-bottom:20px;
 }
 
-header p{
-  max-width:800px;
+.hero p{
+  max-width:850px;
   margin:auto;
-  font-size:20px;
+  font-size:22px;
+  margin-bottom:35px;
+}
+
+.hero a{
+  display:inline-block;
+  background:#ffffff;
+  color:#0b4d8c;
+  padding:14px 34px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.hero a:hover{
+  transform:translateY(-3px);
 }
 
 /* SECTION */
@@ -65,17 +119,17 @@ header p{
 
 .section-title h2{
   color:#0b4d8c;
-  font-size:40px;
+  font-size:42px;
   margin-bottom:15px;
 }
 
 .section-title p{
-  max-width:750px;
+  max-width:760px;
   margin:auto;
   color:#666;
 }
 
-/* ABOUT GRID */
+/* ABOUT */
 
 .about-grid{
   display:grid;
@@ -87,12 +141,12 @@ header p{
 .about-grid img{
   width:100%;
   border-radius:20px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.12);
+  box-shadow:0 5px 18px rgba(0,0,0,0.12);
 }
 
 .about-content h3{
   color:#0b4d8c;
-  font-size:32px;
+  font-size:34px;
   margin-bottom:20px;
 }
 
@@ -100,44 +154,19 @@ header p{
   margin-bottom:20px;
 }
 
-/* BOX GRID */
+/* CARDS */
 
-.box-grid{
+.card-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:30px;
-}
-
-.info-box{
-  background:white;
-  padding:35px 25px;
-  border-radius:18px;
-  box-shadow:0 5px 18px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.info-box:hover{
-  transform:translateY(-8px);
-}
-
-.info-box h3{
-  color:#0b4d8c;
-  margin-bottom:15px;
-}
-
-/* CERTIFICATE GALLERY */
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
 }
 
 .card{
   background:white;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  padding:35px 25px;
+  border-radius:20px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.08);
   transition:0.3s;
 }
 
@@ -145,19 +174,39 @@ header p{
   transform:translateY(-8px);
 }
 
-.card img{
-  width:100%;
-  height:350px;
-  object-fit:cover;
-}
-
-.card-content{
-  padding:20px;
-}
-
-.card-content h3{
+.card h3{
   color:#0b4d8c;
-  margin-bottom:10px;
+  margin-bottom:15px;
+}
+
+/* CTA */
+
+.cta{
+  background:#0b4d8c;
+  color:white;
+  text-align:center;
+  padding:90px 20px;
+}
+
+.cta h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.cta p{
+  max-width:760px;
+  margin:auto;
+  margin-bottom:30px;
+}
+
+.cta a{
+  display:inline-block;
+  background:white;
+  color:#0b4d8c;
+  padding:14px 34px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
 }
 
 /* FOOTER */
@@ -166,22 +215,35 @@ footer{
   background:#111827;
   color:white;
   text-align:center;
-  padding:30px 20px;
-  margin-top:50px;
+  padding:35px 20px;
+}
+
+footer p{
+  margin:8px 0;
 }
 
 @media(max-width:768px){
 
-  header h1{
-    font-size:40px;
+  nav{
+    flex-direction:column;
+    gap:15px;
   }
 
-  header p{
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
     font-size:18px;
   }
 
   .section-title h2{
-    font-size:32px;
+    font-size:34px;
   }
 
 }
@@ -192,18 +254,37 @@ footer{
 
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
 
-<header>
+<nav>
 
-  <h1>About BBC Trust</h1>
+  <h2>BBC Trust</h2>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="donate.html">Donate</a></li>
+  </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <h1>Building Better Communities Through Service</h1>
 
   <p>
-    Dedicated to supporting communities through education, healthcare,
-    social welfare and charitable service initiatives across Andhra Pradesh.
+    BBC Trust is dedicated to supporting education, healthcare,
+    social welfare and community development initiatives across Andhra Pradesh.
   </p>
 
-</header>
+  <a href="about.html">Learn More</a>
+
+</section>
 
 <!-- ABOUT -->
 
@@ -211,11 +292,11 @@ footer{
 
   <div class="section-title">
 
-    <h2>Who We Are</h2>
+    <h2>Welcome To BBC Trust</h2>
 
     <p>
-      BBC Trust (Bapu Bhushanam Charitable Trust) is a registered charitable organization
-      committed to improving the lives of individuals and communities through meaningful social service activities.
+      BBC Trust (Bapu Bhushanam Charitable Trust) works towards creating
+      positive social impact through charitable activities and community support programs.
     </p>
 
   </div>
@@ -226,83 +307,21 @@ footer{
 
     <div class="about-content">
 
-      <h3>Serving Society With Compassion</h3>
+      <h3>Empowering Society With Compassion</h3>
 
       <p>
-        BBC Trust works towards community development by supporting education,
-        healthcare services, awareness programs and social welfare initiatives.
+        Our trust supports underprivileged communities through educational support,
+        healthcare awareness programs, social welfare initiatives and community development activities.
       </p>
 
       <p>
-        Our goal is to create a positive social impact by helping underprivileged
-        families, students and communities through charitable activities and
-        support programs.
+        We believe in creating a stronger society by helping individuals and families
+        gain access to opportunities, support and essential services.
       </p>
 
       <p>
-        We believe that collective support and community participation can help
-        build a healthier, educated and empowered society.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- TRUST REGISTRATION -->
-
-<section class="container">
-
-  <div class="section-title">
-
-    <h2>Trust Registration Details</h2>
-
-    <p>
-      BBC Trust is a registered charitable organization committed to serving
-      communities through social welfare, educational and healthcare initiatives.
-    </p>
-
-  </div>
-
-  <div class="box-grid">
-
-    <div class="info-box">
-
-      <h3>Registered Trust Name</h3>
-
-      <p>
-        Bapu Bhushanam Charitable Trust
-      </p>
-
-    </div>
-
-    <div class="info-box">
-
-      <h3>Registration Number</h3>
-
-      <p>
-        375 / 2010
-      </p>
-
-    </div>
-
-    <div class="info-box">
-
-      <h3>Established Year</h3>
-
-      <p>
-        2010
-      </p>
-
-    </div>
-
-    <div class="info-box">
-
-      <h3>Location</h3>
-
-      <p>
-        Visakhapatnam, Andhra Pradesh, India
+        Through teamwork and public participation, BBC Trust continues to work towards
+        meaningful and sustainable community impact.
       </p>
 
     </div>
@@ -311,173 +330,65 @@ footer{
 
 </section>
 
-<!-- MISSION -->
+<!-- SERVICES -->
 
 <section class="container">
 
   <div class="section-title">
 
-    <h2>Our Vision & Mission</h2>
+    <h2>Our Key Initiatives</h2>
 
     <p>
-      Building stronger communities through service, support and social responsibility.
+      Supporting communities through impactful charitable and welfare programs.
     </p>
 
   </div>
 
-  <div class="box-grid">
+  <div class="card-grid">
 
-    <div class="info-box">
-
-      <h3>Our Vision</h3>
-
-      <p>
-        To create a compassionate society where every individual has access
-        to education, healthcare and community support.
-      </p>
-
-    </div>
-
-    <div class="info-box">
-
-      <h3>Our Mission</h3>
-
-      <p>
-        To conduct impactful charitable programs that support communities,
-        families and individuals in need across Andhra Pradesh.
-      </p>
-
-    </div>
-
-    <div class="info-box">
-
-      <h3>Community Support</h3>
-
-      <p>
-        We focus on educational support, healthcare awareness, food assistance
-        and social welfare initiatives for community development.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- OBJECTIVES -->
-
-<section class="container">
-
-  <div class="section-title">
-
-    <h2>Our Objectives</h2>
-
-    <p>
-      BBC Trust works towards community development through charitable
-      and social welfare activities.
-    </p>
-
-  </div>
-
-  <div class="box-grid">
-
-    <div class="info-box">
-
+    <div class="card">
       <h3>Educational Support</h3>
-
       <p>
-        Supporting students and educational awareness programs for
-        underprivileged communities.
+        Providing educational assistance, awareness programs and learning support for students.
       </p>
-
     </div>
 
-    <div class="info-box">
-
+    <div class="card">
       <h3>Healthcare Services</h3>
-
       <p>
-        Conducting medical camps, health awareness programs and
-        healthcare support activities.
+        Organizing health camps, medical awareness programs and healthcare support initiatives.
       </p>
-
     </div>
 
-    <div class="info-box">
-
+    <div class="card">
       <h3>Social Welfare</h3>
-
       <p>
-        Helping poor and needy individuals through charitable and
-        welfare initiatives.
+        Supporting families and individuals through charitable and community welfare activities.
       </p>
-
     </div>
 
-    <div class="info-box">
-
+    <div class="card">
       <h3>Community Development</h3>
-
       <p>
-        Promoting public welfare activities for the betterment of society
-        and local communities.
+        Encouraging sustainable community growth through social responsibility initiatives.
       </p>
-
     </div>
 
   </div>
 
 </section>
 
-<!-- CERTIFICATES -->
+<!-- CTA -->
 
-<section class="container">
+<section class="cta">
 
-  <div class="section-title">
+  <h2>Together We Can Make A Difference</h2>
 
-    <h2>Registration Certificates</h2>
+  <p>
+    Join BBC Trust in supporting meaningful social initiatives and helping communities build a brighter future.
+  </p>
 
-    <p>
-      Official registration documents and trust certification details.
-    </p>
-
-  </div>
-
-  <div class="gallery">
-
-    <div class="card">
-
-      <img src="images/certificate1.jpg" alt="BBC Trust Registration Certificate">
-
-      <div class="card-content">
-
-        <h3>Trust Registration Certificate</h3>
-
-        <p>
-          Official registration certificate of Bapu Bhushanam Charitable Trust.
-        </p>
-
-      </div>
-
-    </div>
-
-    <div class="card">
-
-      <img src="images/certificate2.jpg" alt="BBC Trust Trust Deed">
-
-      <div class="card-content">
-
-        <h3>Trust Deed Document</h3>
-
-        <p>
-          Registered trust deed and official legal documentation.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
+  <a href="donate.html">Support Our Mission</a>
 
 </section>
 
@@ -487,31 +398,25 @@ footer{
 
   <p>© 2026 BBC Trust. All Rights Reserved.</p>
 
+  <p>
+    Visakhapatnam, Andhra Pradesh, India
+  </p>
+
 </footer>
 
 </body>
 </html>
 ```
 
-## Final Step
+## Final Steps
 
-After replacing:
+1. Open your current `index.html`
+2. Delete everything
+3. Paste this entire code
+4. Click `Commit changes`
+5. Wait 1–2 minutes
+6. Refresh:
 
-* Click `Commit changes`
-* Refresh your website
-* Open `about.html`
+`https://www.bbctrust.in`
 
-## Important
-
-Upload your certificate images into:
-
-```text
-images/
-```
-
-And name them:
-
-```text
-certificate1.jpg
-certificate2.jpg
-```
+Your homepage will now load correctly.
