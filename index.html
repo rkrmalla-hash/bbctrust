@@ -5,9 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BBC Trust | Charitable Trust in Visakhapatnam</title>
+<title>Bapu Bhushanam Charitable Trust | Charitable Trust in Visakhapatnam</title>
 
-<meta name="description" content="BBC Trust is a charitable organization in Visakhapatnam supporting education, healthcare, social welfare and community development initiatives across Andhra Pradesh.">
+<meta name="description" content="Bapu Bhushanam Charitable Trust in Visakhapatnam supports education, healthcare, social welfare and community development initiatives across Andhra Pradesh.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -17,6 +17,10 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
@@ -64,13 +68,14 @@ nav ul li a:hover{
 /* HERO */
 
 .hero{
-  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  background:
+  linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
   url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop');
   background-size:cover;
   background-position:center;
   color:white;
   text-align:center;
-  padding:140px 20px;
+  padding:150px 20px;
 }
 
 .hero h1{
@@ -176,6 +181,99 @@ nav ul li a:hover{
   margin-bottom:15px;
 }
 
+/* DONATE SECTION */
+
+.donate-wrapper{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:40px;
+}
+
+.donate-form,
+.payment-box{
+  background:white;
+  padding:40px 30px;
+  border-radius:20px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.donate-form h3,
+.payment-box h3{
+  color:#0b4d8c;
+  margin-bottom:25px;
+  font-size:30px;
+}
+
+.donate-form form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.donate-form input,
+.donate-form textarea{
+  width:100%;
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:12px;
+  font-family:'Poppins',sans-serif;
+  font-size:15px;
+}
+
+.donate-form button{
+  background:#0b4d8c;
+  color:white;
+  border:none;
+  padding:15px;
+  border-radius:50px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.donate-form button:hover{
+  opacity:0.9;
+}
+
+.payment-info p{
+  margin-bottom:15px;
+}
+
+.upi-btn,
+.razorpay-btn,
+.whatsapp-btn{
+  display:block;
+  text-align:center;
+  margin-top:20px;
+  padding:15px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.upi-btn{
+  background:#16a34a;
+  color:white;
+}
+
+.razorpay-btn{
+  background:#0b4d8c;
+  color:white;
+}
+
+.whatsapp-btn{
+  background:#25D366;
+  color:white;
+}
+
+.upi-btn:hover,
+.razorpay-btn:hover,
+.whatsapp-btn:hover{
+  transform:translateY(-3px);
+}
+
 /* CTA */
 
 .cta{
@@ -219,6 +317,8 @@ footer p{
   margin:8px 0;
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
   nav{
@@ -258,12 +358,11 @@ footer p{
   <h2>BBC Trust</h2>
 
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="activities.html">Activities</a></li>
-    <li><a href="programs.html">Programs</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="donate.html">Donate</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Programs</a></li>
+    <li><a href="#donate">Donate</a></li>
+    <li><a href="mailto:bapubhushanumcharitabletrust@gmail.com">Contact</a></li>
   </ul>
 
 </nav>
@@ -275,50 +374,45 @@ footer p{
   <h1>Bapu Bhushanam Charitable Trust</h1>
 
   <p>
-    BBC Trust is dedicated to supporting education, healthcare,
-    social welfare and community development initiatives across Andhra Pradesh.
+    Supporting education, healthcare, social welfare and community development initiatives across Andhra Pradesh.
   </p>
 
-  <a href="about.html">Learn More</a>
+  <a href="#donate">Donate Now</a>
 
 </section>
 
 <!-- ABOUT -->
 
-<section class="container">
+<section class="container" id="about">
 
   <div class="section-title">
 
     <h2>Welcome To BBC Trust</h2>
 
     <p>
-      BBC Trust (Bapu Bhushanam Charitable Trust) works towards creating
-      positive social impact through charitable activities and community support programs.
+      Bapu Bhushanam Charitable Trust works towards creating positive social impact through charitable activities and community support programs.
     </p>
 
   </div>
 
   <div class="about-grid">
 
-    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust Community Service">
+    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust">
 
     <div class="about-content">
 
       <h3>Empowering Society With Compassion</h3>
 
       <p>
-        Our trust supports underprivileged communities through educational support,
-        healthcare awareness programs, social welfare initiatives and community development activities.
+        Our trust supports underprivileged communities through educational support, healthcare awareness programs and social welfare initiatives.
       </p>
 
       <p>
-        We believe in creating a stronger society by helping individuals and families
-        gain access to opportunities, support and essential services.
+        We believe in building a stronger society by helping individuals and families gain access to opportunities and essential services.
       </p>
 
       <p>
-        Through teamwork and public participation, BBC Trust continues to work towards
-        meaningful and sustainable community impact.
+        Through teamwork and public participation, BBC Trust continues to work towards meaningful and sustainable community impact.
       </p>
 
     </div>
@@ -329,7 +423,7 @@ footer p{
 
 <!-- SERVICES -->
 
-<section class="container">
+<section class="container" id="services">
 
   <div class="section-title">
 
@@ -346,21 +440,21 @@ footer p{
     <div class="card">
       <h3>Educational Support</h3>
       <p>
-        Providing educational assistance, awareness programs and learning support for students.
+        Educational assistance, awareness programs and learning support for students.
       </p>
     </div>
 
     <div class="card">
       <h3>Healthcare Services</h3>
       <p>
-        Organizing health camps, medical awareness programs and healthcare support initiatives.
+        Health camps, medical awareness programs and healthcare support initiatives.
       </p>
     </div>
 
     <div class="card">
       <h3>Social Welfare</h3>
       <p>
-        Supporting families and individuals through charitable and community welfare activities.
+        Community welfare activities supporting families and individuals.
       </p>
     </div>
 
@@ -369,6 +463,90 @@ footer p{
       <p>
         Encouraging sustainable community growth through social responsibility initiatives.
       </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DONATE -->
+
+<section class="container" id="donate">
+
+  <div class="section-title">
+
+    <h2>Donate Now</h2>
+
+    <p>
+      Your contribution helps us continue social service and charitable activities for needy communities.
+    </p>
+
+  </div>
+
+  <div class="donate-wrapper">
+
+    <!-- FORM -->
+
+    <div class="donate-form">
+
+      <h3>Donation Form</h3>
+
+      <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
+
+        <input type="hidden" name="_subject" value="New Donation Enquiry">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <input type="email" name="email" placeholder="Email Address" required>
+
+        <input type="number" name="amount" placeholder="Donation Amount" required>
+
+        <textarea name="message" rows="5" placeholder="Message"></textarea>
+
+        <button type="submit">Submit Donation Request</button>
+
+      </form>
+
+    </div>
+
+    <!-- PAYMENT -->
+
+    <div class="payment-box">
+
+      <h3>Payment Details</h3>
+
+      <div class="payment-info">
+
+        <p><strong>Bank Name:</strong> The Federal Bank</p>
+
+        <p><strong>Account Name:</strong> Malla Ramakrishna Rao</p>
+
+        <p><strong>Account Number:</strong> 12350200020879</p>
+
+        <p><strong>IFSC Code:</strong> FDRL0001235</p>
+
+        <p><strong>Google Pay / PhonePe:</strong> 9494402223</p>
+
+        <p><strong>Email:</strong> bapubhushanumcharitabletrust@gmail.com</p>
+
+      </div>
+
+      <a class="upi-btn" href="upi://pay?pa=9494402223@upi&pn=BBC Trust&cu=INR">
+        Pay Through UPI
+      </a>
+
+      <a class="razorpay-btn" href="#" onclick="openRazorpay()">
+        Donate With Razorpay
+      </a>
+
+      <a class="whatsapp-btn" href="https://wa.me/919494402223" target="_blank">
+        Contact On WhatsApp
+      </a>
+
     </div>
 
   </div>
@@ -385,7 +563,7 @@ footer p{
     Join BBC Trust in supporting meaningful social initiatives and helping communities build a brighter future.
   </p>
 
-  <a href="donate.html">Support Our Mission</a>
+  <a href="#donate">Support Our Mission</a>
 
 </section>
 
@@ -393,13 +571,55 @@ footer p{
 
 <footer>
 
-  <p>© 2026 BBC Trust. All Rights Reserved.</p>
+  <p>© 2026 Bapu Bhushanam Charitable Trust. All Rights Reserved.</p>
 
-  <p>
-    Visakhapatnam, Andhra Pradesh, India
-  </p>
+  <p>Visakhapatnam, Andhra Pradesh, India</p>
+
+  <p>Email: bapubhushanumcharitabletrust@gmail.com</p>
+
+  <p>Phone: +91 9494402223</p>
 
 </footer>
+
+<!-- RAZORPAY -->
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script>
+
+function openRazorpay(){
+
+  var options = {
+
+    "key": "YOUR_RAZORPAY_KEY_ID",
+
+    "amount": "50000",
+
+    "currency": "INR",
+
+    "name": "Bapu Bhushanam Charitable Trust",
+
+    "description": "Donation Payment",
+
+    "handler": function (response){
+
+      alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
+
+    },
+
+    "theme": {
+      "color": "#0b4d8c"
+    }
+
+  };
+
+  var rzp1 = new Razorpay(options);
+
+  rzp1.open();
+
+}
+
+</script>
 
 </body>
 </html>
