@@ -2,413 +2,487 @@
 <html lang="en">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Bapu Bhushanam Charitable Trust | Charitable Trust in Visakhapatnam</title>
 
-<meta name="description" content="Bapu Bhushanam Charitable Trust in Visakhapatnam supports education, healthcare, food donation, orphan support, social welfare and community development initiatives across Andhra Pradesh.">
+<meta name="description"
+content="Bapu Bhushanam Charitable Trust in Visakhapatnam supports education, healthcare, food distribution, orphan support, social welfare and community development activities across Andhra Pradesh." />
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:'Poppins',sans-serif;
-  background:#f5f7fb;
-  color:#222;
-  line-height:1.7;
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    overflow-x:hidden;
+    line-height:1.7;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 nav{
-  background:#0b4d8c;
-  padding:18px 5%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:999;
+    width:100%;
+    background:#0b4d8c;
+    padding:16px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 15px rgba(0,0,0,0.1);
 }
 
-nav h2{
-  color:white;
-  font-size:28px;
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
 }
 
 nav ul{
-  display:flex;
-  gap:25px;
-  list-style:none;
+    display:flex;
+    gap:25px;
+    list-style:none;
 }
 
 nav ul li a{
-  color:white;
-  text-decoration:none;
-  font-weight:500;
-  transition:0.3s;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+    font-size:15px;
 }
 
 nav ul li a:hover{
-  opacity:0.8;
+    color:#dceeff;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
-  background:
-  linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
-  url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop');
-  background-size:cover;
-  background-position:center;
-  color:white;
-  text-align:center;
-  padding:150px 20px;
+    min-height:92vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+    color:white;
+}
+
+.hero-content{
+    max-width:950px;
 }
 
 .hero h1{
-  font-size:60px;
-  margin-bottom:20px;
+    font-size:65px;
+    line-height:1.2;
+    margin-bottom:25px;
+    font-weight:800;
 }
 
 .hero p{
-  max-width:850px;
-  margin:auto;
-  font-size:22px;
-  margin-bottom:35px;
+    font-size:22px;
+    margin-bottom:40px;
+    color:#f1f1f1;
 }
 
-.hero a{
-  display:inline-block;
-  background:#ffffff;
-  color:#0b4d8c;
-  padding:14px 34px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
+.hero-btns{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
-.hero a:hover{
-  transform:translateY(-3px);
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+    font-size:16px;
 }
 
-/* SECTION */
+.primary-btn{
+    background:#ffffff;
+    color:#0b4d8c;
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+/* ================= COMMON ================= */
 
 .container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-  padding:80px 0;
+    width:92%;
+    max-width:1250px;
+    margin:auto;
+    padding:90px 0;
 }
 
 .section-title{
-  text-align:center;
-  margin-bottom:50px;
+    text-align:center;
+    margin-bottom:60px;
 }
 
 .section-title h2{
-  color:#0b4d8c;
-  font-size:42px;
-  margin-bottom:15px;
+    font-size:46px;
+    color:#0b4d8c;
+    margin-bottom:15px;
+    font-weight:700;
 }
 
 .section-title p{
-  max-width:760px;
-  margin:auto;
-  color:#666;
+    max-width:850px;
+    margin:auto;
+    color:#666;
+    font-size:17px;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 
 .about-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:50px;
-  align-items:center;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:50px;
+    align-items:center;
 }
 
 .about-grid img{
-  width:100%;
-  border-radius:20px;
-  box-shadow:0 5px 18px rgba(0,0,0,0.12);
+    width:100%;
+    border-radius:25px;
+    height:100%;
+    object-fit:cover;
+    box-shadow:0 8px 30px rgba(0,0,0,0.12);
 }
 
 .about-content h3{
-  color:#0b4d8c;
-  font-size:34px;
-  margin-bottom:20px;
+    color:#0b4d8c;
+    font-size:38px;
+    margin-bottom:20px;
 }
 
 .about-content p{
-  margin-bottom:20px;
+    margin-bottom:18px;
+    color:#555;
+    font-size:16px;
 }
 
-/* SERVICES */
-
-.card-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:white;
-  padding:35px 25px;
-  border-radius:20px;
-  box-shadow:0 5px 18px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-}
-
-.card h3{
-  color:#0b4d8c;
-  margin-bottom:15px;
-}
-
-/* PROGRAMS */
+/* ================= PROGRAMS ================= */
 
 .program-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:35px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
 .program-card{
-  background:white;
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 5px 18px rgba(0,0,0,0.08);
-  transition:0.3s;
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
 .program-card:hover{
-  transform:translateY(-8px);
+    transform:translateY(-8px);
 }
 
 .program-card img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
+    width:100%;
+    height:230px;
+    object-fit:cover;
 }
 
 .program-content{
-  padding:28px 24px;
+    padding:28px;
 }
 
 .program-content h3{
-  color:#0b4d8c;
-  margin-bottom:15px;
+    color:#0b4d8c;
+    margin-bottom:15px;
+    font-size:24px;
 }
 
 .program-content p{
-  color:#555;
+    color:#555;
+    font-size:15px;
 }
 
-/* DONATE */
+/* ================= DONATE ================= */
+
+.donate-section{
+    background:#eef5ff;
+}
 
 .donate-wrapper{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
 }
 
-.donate-form,
+.donate-box,
 .payment-box{
-  background:white;
-  padding:40px 30px;
-  border-radius:20px;
-  box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
 }
 
-.donate-form h3,
+.donate-box h3,
 .payment-box h3{
-  color:#0b4d8c;
-  margin-bottom:25px;
-  font-size:30px;
+    color:#0b4d8c;
+    margin-bottom:25px;
+    font-size:30px;
 }
 
-.donate-form form{
-  display:flex;
-  flex-direction:column;
-  gap:18px;
+form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
 }
 
-.donate-form input,
-.donate-form textarea,
-.contact-form input,
-.contact-form textarea{
-  width:100%;
-  padding:15px;
-  border:1px solid #ddd;
-  border-radius:12px;
-  font-family:'Poppins',sans-serif;
-  font-size:15px;
+form input,
+form textarea{
+    width:100%;
+    padding:16px;
+    border-radius:14px;
+    border:1px solid #d9d9d9;
+    font-size:15px;
+    font-family:'Poppins',sans-serif;
 }
 
-.donate-form button,
-.contact-form button{
-  background:#0b4d8c;
-  color:white;
-  border:none;
-  padding:15px;
-  border-radius:50px;
-  font-size:16px;
-  font-weight:600;
-  cursor:pointer;
+form textarea{
+    resize:none;
 }
 
-.payment-info p{
-  margin-bottom:15px;
+form button{
+    border:none;
+    background:#0b4d8c;
+    color:white;
+    padding:16px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-.upi-btn,
-.razorpay-btn,
-.whatsapp-btn{
-  display:block;
-  text-align:center;
-  margin-top:20px;
-  padding:15px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
+form button:hover{
+    opacity:0.9;
 }
 
-.upi-btn{
-  background:#16a34a;
-  color:white;
+.payment-box p{
+    margin-bottom:15px;
+    color:#444;
 }
 
-.razorpay-btn{
-  background:#0b4d8c;
-  color:white;
+.payment-btn{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    padding:15px;
+    border-radius:50px;
+    margin-top:18px;
+    font-weight:600;
+    transition:0.3s;
 }
 
-.whatsapp-btn{
-  background:#25D366;
-  color:white;
+.upi{
+    background:#16a34a;
+    color:white;
 }
 
-.upi-btn:hover,
-.razorpay-btn:hover,
-.whatsapp-btn:hover{
-  transform:translateY(-3px);
+.razor{
+    background:#0b4d8c;
+    color:white;
 }
 
-/* CONTACT */
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.payment-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ================= CONTACT ================= */
 
 .contact-wrapper{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
 }
 
 .contact-info,
 .contact-form{
-  background:white;
-  padding:40px 30px;
-  border-radius:20px;
-  box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
 }
 
 .contact-info h3,
 .contact-form h3{
-  color:#0b4d8c;
-  margin-bottom:25px;
+    color:#0b4d8c;
+    margin-bottom:25px;
+    font-size:30px;
 }
 
 .info-box{
-  margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 .info-box h4{
-  color:#0b4d8c;
+    color:#0b4d8c;
+    margin-bottom:8px;
 }
 
-/* CTA */
+.info-box p{
+    color:#555;
+}
+
+/* ================= CTA ================= */
 
 .cta{
-  background:#0b4d8c;
-  color:white;
-  text-align:center;
-  padding:90px 20px;
+    background:#0b4d8c;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
 }
 
 .cta h2{
-  font-size:42px;
-  margin-bottom:20px;
+    font-size:48px;
+    margin-bottom:20px;
 }
 
 .cta p{
-  max-width:760px;
-  margin:auto;
-  margin-bottom:30px;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:35px;
+    color:#e8eef7;
 }
 
 .cta a{
-  display:inline-block;
-  background:white;
-  color:#0b4d8c;
-  padding:14px 34px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:600;
+    display:inline-block;
+    background:white;
+    color:#0b4d8c;
+    padding:16px 38px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
-  background:#111827;
-  color:white;
-  text-align:center;
-  padding:35px 20px;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:45px 20px;
 }
 
 footer p{
-  margin:8px 0;
+    margin:10px 0;
+    color:#d1d5db;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
+
+@media(max-width:991px){
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+}
 
 @media(max-width:768px){
 
-  nav{
-    flex-direction:column;
-    gap:15px;
-  }
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:18px 20px;
+    }
 
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
 
-  .hero h1{
-    font-size:42px;
-  }
+    .logo{
+        font-size:24px;
+    }
 
-  .hero p{
-    font-size:18px;
-  }
+    .hero{
+        min-height:auto;
+        padding:120px 20px 100px;
+    }
 
-  .section-title h2{
-    font-size:34px;
-  }
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .hero-btns{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+        width:100%;
+        max-width:280px;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .about-content h3{
+        font-size:30px;
+    }
+
+    .cta h2{
+        font-size:34px;
+    }
+
+    .container{
+        padding:70px 0;
+    }
 
 }
 
@@ -422,15 +496,15 @@ footer p{
 
 <nav>
 
-  <h2>BBC Trust</h2>
+    <div class="logo">BBC Trust</div>
 
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#programs">Programs</a></li>
-    <li><a href="#donate">Donate</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
 </nav>
 
@@ -438,13 +512,24 @@ footer p{
 
 <section class="hero">
 
-  <h1>Bapu Bhushanam Charitable Trust</h1>
+    <div class="hero-content">
 
-  <p>
-    Supporting education, healthcare, orphan care, food donation and social welfare initiatives across Andhra Pradesh.
-  </p>
+        <h1>Bapu Bhushanam Charitable Trust</h1>
 
-  <a href="#donate">Donate Now</a>
+        <p>
+            Supporting education, orphan care, food distribution, healthcare,
+            social welfare and community development activities across Visakhapatnam and Andhra Pradesh.
+        </p>
+
+        <div class="hero-btns">
+
+            <a href="#donate" class="btn primary-btn">Donate Now</a>
+
+            <a href="#programs" class="btn secondary-btn">Our Programs</a>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -452,39 +537,40 @@ footer p{
 
 <section class="container" id="about">
 
-  <div class="section-title">
+    <div class="section-title">
 
-    <h2>Welcome To BBC Trust</h2>
+        <h2>Welcome To BBC Trust</h2>
 
-    <p>
-      Bapu Bhushanam Charitable Trust works towards creating positive social impact through charitable activities and community welfare programs.
-    </p>
-
-  </div>
-
-  <div class="about-grid">
-
-    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust">
-
-    <div class="about-content">
-
-      <h3>Empowering Society With Compassion</h3>
-
-      <p>
-        Our trust supports underprivileged communities through food donation, educational assistance, healthcare awareness and social welfare activities.
-      </p>
-
-      <p>
-        We believe in helping families, children and needy individuals gain access to opportunities, support and essential services.
-      </p>
-
-      <p>
-        Through teamwork and public participation, BBC Trust continues to work towards meaningful and sustainable community development.
-      </p>
+        <p>
+            Bapu Bhushanam Charitable Trust works towards creating a better society through charitable activities,
+            community support, food distribution, orphan support and welfare programs.
+        </p>
 
     </div>
 
-  </div>
+    <div class="about-grid">
+
+        <img src="https://images.unsplash.com/photo-1593113598332-cd59a93d23c6?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust Helping Poor">
+
+        <div class="about-content">
+
+            <h3>Empowering Lives With Compassion</h3>
+
+            <p>
+                Our trust supports poor families, children, elderly people and underprivileged communities through social welfare activities and charitable support programs.
+            </p>
+
+            <p>
+                We conduct food distribution programs, educational assistance, orphan support and healthcare awareness activities across Visakhapatnam.
+            </p>
+
+            <p>
+                Together with public support and volunteers, BBC Trust continues working towards meaningful community development and positive social impact.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -492,161 +578,164 @@ footer p{
 
 <section class="container" id="programs">
 
-  <div class="section-title">
+    <div class="section-title">
 
-    <h2>Our Programs</h2>
-
-    <p>
-      Serving communities across Visakhapatnam through impactful charitable and welfare initiatives.
-    </p>
-
-  </div>
-
-  <div class="program-grid">
-
-    <div class="program-card">
-
-      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="Orphan Support">
-
-      <div class="program-content">
-
-        <h3>Orphan Support Program</h3>
+        <h2>Our Welfare Programs</h2>
 
         <p>
-          Supporting orphan children with food, education support, daily essentials and care programs for a better future.
+            Supporting people across Visakhapatnam through social service and charitable initiatives.
         </p>
-
-      </div>
 
     </div>
 
-    <div class="program-card">
+    <div class="program-grid">
 
-      <img src="https://images.unsplash.com/photo-1593113598332-cd59a93f7d1d?q=80&w=1200&auto=format&fit=crop" alt="Food Donation">
+        <div class="program-card">
 
-      <div class="program-content">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop" alt="Food Distribution">
 
-        <h3>Food Donation Services</h3>
+            <div class="program-content">
 
-        <p>
-          Conducting food distribution programs for poor families, elderly people and needy communities.
-        </p>
+                <h3>Food Distribution</h3>
 
-      </div>
+                <p>
+                    Providing food and essential supplies to poor families, homeless people and needy communities.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="program-card">
+
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop" alt="Helping Orphans">
+
+            <div class="program-content">
+
+                <h3>Orphan Support</h3>
+
+                <p>
+                    Supporting orphan children with education, care, daily necessities and social welfare assistance.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="program-card">
+
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Healthcare">
+
+            <div class="program-content">
+
+                <h3>Healthcare Activities</h3>
+
+                <p>
+                    Organizing healthcare awareness programs, medical support camps and wellness initiatives.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="program-card">
+
+            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=1200&auto=format&fit=crop" alt="Education">
+
+            <div class="program-content">
+
+                <h3>Educational Support</h3>
+
+                <p>
+                    Helping students with educational support, awareness programs and learning opportunities.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
-
-    <div class="program-card">
-
-      <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop" alt="Education">
-
-      <div class="program-content">
-
-        <h3>Educational Assistance</h3>
-
-        <p>
-          Helping students through educational awareness, books distribution and learning support programs.
-        </p>
-
-      </div>
-
-    </div>
-
-    <div class="program-card">
-
-      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop" alt="Medical Camps">
-
-      <div class="program-content">
-
-        <h3>Healthcare Programs</h3>
-
-        <p>
-          Organizing healthcare awareness activities, medical camps and wellness support initiatives.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
 
 </section>
 
 <!-- DONATE -->
 
-<section class="container" id="donate">
+<section class="container donate-section" id="donate">
 
-  <div class="section-title">
+    <div class="section-title">
 
-    <h2>Donate Now</h2>
+        <h2>Donate Now</h2>
 
-    <p>
-      Your contribution helps us continue charitable and social welfare activities for needy communities.
-    </p>
-
-  </div>
-
-  <div class="donate-wrapper">
-
-    <div class="donate-form">
-
-      <h3>Donation Form</h3>
-
-      <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
-
-        <input type="hidden" name="_subject" value="New Donation Enquiry">
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <input type="text" name="name" placeholder="Full Name" required>
-
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-
-        <input type="email" name="email" placeholder="Email Address" required>
-
-        <input type="number" name="amount" placeholder="Donation Amount" required>
-
-        <textarea name="message" rows="5" placeholder="Message"></textarea>
-
-        <button type="submit">Submit Donation Request</button>
-
-      </form>
+        <p>
+            Your contribution helps us continue charitable and welfare activities for needy communities.
+        </p>
 
     </div>
 
-    <div class="payment-box">
+    <div class="donate-wrapper">
 
-      <h3>Payment Details</h3>
+        <div class="donate-box">
 
-      <div class="payment-info">
+            <h3>Donation Form</h3>
 
-        <p><strong>Bank Name:</strong> The Federal Bank</p>
+            <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
 
-        <p><strong>Account Name:</strong> Malla Ramakrishna Rao</p>
+                <input type="hidden" name="_subject" value="New Donation Request">
 
-        <p><strong>Account Number:</strong> 12350200020879</p>
+                <input type="hidden" name="_captcha" value="false">
 
-        <p><strong>IFSC Code:</strong> FDRL0001235</p>
+                <input type="text" name="name" placeholder="Full Name" required>
 
-        <p><strong>Google Pay / PhonePe:</strong> 9494402223</p>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
 
-      </div>
+                <input type="email" name="email" placeholder="Email Address" required>
 
-      <a class="upi-btn" href="upi://pay?pa=9494402223@upi&pn=BBC Trust&cu=INR">
-        Pay Through UPI
-      </a>
+                <input type="number" name="amount" placeholder="Donation Amount" required>
 
-      <a class="razorpay-btn" href="#" onclick="openRazorpay()">
-        Donate With Razorpay
-      </a>
+                <textarea name="message" rows="5" placeholder="Message"></textarea>
 
-      <a class="whatsapp-btn" href="https://wa.me/919494402223" target="_blank">
-        Contact On WhatsApp
-      </a>
+                <button type="submit">Submit Donation</button>
+
+            </form>
+
+        </div>
+
+        <div class="payment-box">
+
+            <h3>Payment Details</h3>
+
+            <p><strong>Bank Name:</strong> The Federal Bank</p>
+
+            <p><strong>Account Name:</strong> Malla Ramakrishna Rao</p>
+
+            <p><strong>Account Number:</strong> 12350200020879</p>
+
+            <p><strong>IFSC Code:</strong> FDRL0001235</p>
+
+            <p><strong>PhonePe / Google Pay:</strong> 9494402223</p>
+
+            <p><strong>Email:</strong> bapubhushanumcharitabletrust@gmail.com</p>
+
+            <a class="payment-btn upi"
+            href="upi://pay?pa=9494402223@upi&pn=BBC Trust&cu=INR">
+            Pay Through UPI
+            </a>
+
+            <a class="payment-btn razor"
+            href="#"
+            onclick="openRazorpay()">
+            Donate With Razorpay
+            </a>
+
+            <a class="payment-btn whatsapp"
+            href="https://wa.me/919494402223"
+            target="_blank">
+            Chat On WhatsApp
+            </a>
+
+        </div>
 
     </div>
-
-  </div>
 
 </section>
 
@@ -654,75 +743,94 @@ footer p{
 
 <section class="container" id="contact">
 
-  <div class="section-title">
+    <div class="section-title">
 
-    <h2>Contact Us</h2>
+        <h2>Contact Us</h2>
 
-    <p>
-      Contact Bapu Bhushanam Charitable Trust for donations, volunteering and social welfare activities.
-    </p>
-
-  </div>
-
-  <div class="contact-wrapper">
-
-    <div class="contact-info">
-
-      <h3>Contact Information</h3>
-
-      <div class="info-box">
-        <h4>Office Address</h4>
         <p>
-          D No 3-5-4/1, Krishna Gardens, Dabagardens, Visakhapatnam - 530020
+            Contact Bapu Bhushanam Charitable Trust for donations, volunteering and support activities.
         </p>
-      </div>
-
-      <div class="info-box">
-        <h4>Phone Number</h4>
-        <p>+91 9494402223</p>
-      </div>
-
-      <div class="info-box">
-        <h4>Email Address</h4>
-        <p>bapubhushanumcharitabletrust@gmail.com</p>
-      </div>
-
-      <div class="info-box">
-        <h4>Office Timings</h4>
-        <p>9:30 AM to 6:00 PM</p>
-      </div>
 
     </div>
 
-    <div class="contact-form">
+    <div class="contact-wrapper">
 
-      <h3>Send Message</h3>
+        <div class="contact-info">
 
-      <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
+            <h3>Contact Information</h3>
 
-        <input type="hidden" name="_subject" value="New Contact Message">
+            <div class="info-box">
 
-        <input type="hidden" name="_captcha" value="false">
+                <h4>Office Address</h4>
 
-        <input type="text" name="name" placeholder="Full Name" required>
+                <p>
+                    D No 3-5-4/1, Krishna Gardens,
+                    Dabagardens, Visakhapatnam - 530020
+                </p>
 
-        <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
 
-        <input type="email" name="email" placeholder="Email Address" required>
+            <div class="info-box">
 
-        <input type="text" name="subject" placeholder="Subject" required>
+                <h4>Phone Number</h4>
 
-        <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                <p>+91 9494402223</p>
 
-        <button type="submit">
-          Send Message
-        </button>
+            </div>
 
-      </form>
+            <div class="info-box">
+
+                <h4>Alternate Number</h4>
+
+                <p>+91 9381756318</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <h4>Email Address</h4>
+
+                <p>bapubhushanumcharitabletrust@gmail.com</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <h4>Office Timings</h4>
+
+                <p>9:30 AM to 6:00 PM</p>
+
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+            <h3>Send Message</h3>
+
+            <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="New Contact Message">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="text" name="name" placeholder="Full Name" required>
+
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <input type="text" name="subject" placeholder="Subject" required>
+
+                <textarea name="message" rows="6" placeholder="Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
 
     </div>
-
-  </div>
 
 </section>
 
@@ -730,13 +838,13 @@ footer p{
 
 <section class="cta">
 
-  <h2>Together We Can Make A Difference</h2>
+    <h2>Together We Can Make A Difference</h2>
 
-  <p>
-    Join BBC Trust in helping communities build a brighter and healthier future.
-  </p>
+    <p>
+        Join Bapu Bhushanam Charitable Trust in supporting meaningful social initiatives and helping communities build a brighter future.
+    </p>
 
-  <a href="#donate">Support Our Mission</a>
+    <a href="#donate">Support Our Mission</a>
 
 </section>
 
@@ -744,15 +852,17 @@ footer p{
 
 <footer>
 
-  <p>© 2026 Bapu Bhushanam Charitable Trust. All Rights Reserved.</p>
+    <p>© 2026 Bapu Bhushanam Charitable Trust. All Rights Reserved.</p>
 
-  <p>Visakhapatnam, Andhra Pradesh, India</p>
+    <p>Visakhapatnam, Andhra Pradesh, India</p>
 
-  <p>Email: bapubhushanumcharitabletrust@gmail.com</p>
+    <p>Email: bapubhushanumcharitabletrust@gmail.com</p>
 
-  <p>Phone: +91 9494402223</p>
+    <p>Phone: +91 9494402223</p>
 
 </footer>
+
+<!-- RAZORPAY -->
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
@@ -760,33 +870,33 @@ footer p{
 
 function openRazorpay(){
 
-  var options = {
+    var options = {
 
-    "key": "YOUR_RAZORPAY_KEY_ID",
+        "key": "YOUR_RAZORPAY_KEY_ID",
 
-    "amount": "50000",
+        "amount": "50000",
 
-    "currency": "INR",
+        "currency": "INR",
 
-    "name": "Bapu Bhushanam Charitable Trust",
+        "name": "Bapu Bhushanam Charitable Trust",
 
-    "description": "Donation Payment",
+        "description": "Donation Payment",
 
-    "handler": function (response){
+        "handler": function (response){
 
-      alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
+            alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
 
-    },
+        },
 
-    "theme": {
-      "color": "#0b4d8c"
-    }
+        "theme": {
+            "color": "#0b4d8c"
+        }
 
-  };
+    };
 
-  var rzp1 = new Razorpay(options);
+    var rzp1 = new Razorpay(options);
 
-  rzp1.open();
+    rzp1.open();
 
 }
 
