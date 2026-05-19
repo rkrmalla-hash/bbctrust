@@ -1,217 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- CONTACT SECTION -->
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section class="container" id="contact">
 
-<title>Bapu Bhushanam Charitable Trust | Charitable Trust in Visakhapatnam</title>
+  <div class="section-title">
 
-<meta name="description" content="Bapu Bhushanam Charitable Trust in Visakhapatnam supports education, healthcare, social welfare and community development initiatives across Andhra Pradesh.">
+    <h2>Contact Us</h2>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <p>
+      Get in touch with Bapu Bhushanam Charitable Trust for donations,
+      volunteering, support programs and charitable activities.
+    </p>
+
+  </div>
+
+  <div class="contact-wrapper">
+
+    <!-- CONTACT INFO -->
+
+    <div class="contact-info">
+
+      <h3>Contact Information</h3>
+
+      <div class="info-box">
+        <h4>Office Address</h4>
+        <p>
+          D No 3-5-4/1, Krishna Gardens,<br>
+          Dabagardens, Visakhapatnam - 530020
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>Mobile Number</h4>
+        <p>
+          +91 9494402223
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>Alternate Number</h4>
+        <p>
+          +91 9381756318
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>Email Address</h4>
+        <p>
+          bapubhushanumcharitabletrust@gmail.com
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>Office Timings</h4>
+        <p>
+          9:30 AM to 6:00 PM
+        </p>
+      </div>
+
+      <a class="contact-whatsapp"
+         href="https://wa.me/919494402223"
+         target="_blank">
+         Chat On WhatsApp
+      </a>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form">
+
+      <h3>Send Message</h3>
+
+      <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
+
+        <input type="hidden" name="_subject" value="New Contact Message - BBC Trust">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text"
+               name="name"
+               placeholder="Full Name"
+               required>
+
+        <input type="tel"
+               name="phone"
+               placeholder="Phone Number"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Email Address"
+               required>
+
+        <input type="text"
+               name="subject"
+               placeholder="Subject"
+               required>
+
+        <textarea name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required></textarea>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+
+      <a class="contact-whatsapp"
+         style="margin-top:20px;"
+         href="https://wa.me/919494402223?text=Hello%20BBC%20Trust%20I%20would%20like%20to%20contact%20you"
+         target="_blank">
+
+         Send On WhatsApp
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
 <style>
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+/* CONTACT SECTION */
 
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:'Poppins',sans-serif;
-  background:#f5f7fb;
-  color:#222;
-  line-height:1.7;
-}
-
-/* NAVBAR */
-
-nav{
-  background:#0b4d8c;
-  padding:18px 5%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:999;
-}
-
-nav h2{
-  color:white;
-  font-size:28px;
-}
-
-nav ul{
-  display:flex;
-  gap:25px;
-  list-style:none;
-}
-
-nav ul li a{
-  color:white;
-  text-decoration:none;
-  font-weight:500;
-  transition:0.3s;
-}
-
-nav ul li a:hover{
-  opacity:0.8;
-}
-
-/* HERO */
-
-.hero{
-  background:
-  linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
-  url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop');
-  background-size:cover;
-  background-position:center;
-  color:white;
-  text-align:center;
-  padding:150px 20px;
-}
-
-.hero h1{
-  font-size:60px;
-  margin-bottom:20px;
-}
-
-.hero p{
-  max-width:850px;
-  margin:auto;
-  font-size:22px;
-  margin-bottom:35px;
-}
-
-.hero a{
-  display:inline-block;
-  background:#ffffff;
-  color:#0b4d8c;
-  padding:14px 34px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.hero a:hover{
-  transform:translateY(-3px);
-}
-
-/* SECTION */
-
-.container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-  padding:80px 0;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:50px;
-}
-
-.section-title h2{
-  color:#0b4d8c;
-  font-size:42px;
-  margin-bottom:15px;
-}
-
-.section-title p{
-  max-width:760px;
-  margin:auto;
-  color:#666;
-}
-
-/* ABOUT */
-
-.about-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:50px;
-  align-items:center;
-}
-
-.about-grid img{
-  width:100%;
-  border-radius:20px;
-  box-shadow:0 5px 18px rgba(0,0,0,0.12);
-}
-
-.about-content h3{
-  color:#0b4d8c;
-  font-size:34px;
-  margin-bottom:20px;
-}
-
-.about-content p{
-  margin-bottom:20px;
-}
-
-/* CARDS */
-
-.card-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:white;
-  padding:35px 25px;
-  border-radius:20px;
-  box-shadow:0 5px 18px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-}
-
-.card h3{
-  color:#0b4d8c;
-  margin-bottom:15px;
-}
-
-/* DONATE SECTION */
-
-.donate-wrapper{
+.contact-wrapper{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:40px;
+  margin-top:50px;
 }
 
-.donate-form,
-.payment-box{
+.contact-info,
+.contact-form{
   background:white;
   padding:40px 30px;
   border-radius:20px;
   box-shadow:0 5px 18px rgba(0,0,0,0.08);
 }
 
-.donate-form h3,
-.payment-box h3{
+.contact-info h3,
+.contact-form h3{
   color:#0b4d8c;
   margin-bottom:25px;
   font-size:30px;
 }
 
-.donate-form form{
+.info-box{
+  margin-bottom:25px;
+}
+
+.info-box h4{
+  color:#0b4d8c;
+  margin-bottom:8px;
+}
+
+.contact-form form{
   display:flex;
   flex-direction:column;
   gap:18px;
 }
 
-.donate-form input,
-.donate-form textarea{
+.contact-form input,
+.contact-form textarea{
   width:100%;
   padding:15px;
   border:1px solid #ddd;
@@ -220,7 +174,7 @@ nav ul li a:hover{
   font-size:15px;
 }
 
-.donate-form button{
+.contact-form button{
   background:#0b4d8c;
   color:white;
   border:none;
@@ -232,394 +186,39 @@ nav ul li a:hover{
   transition:0.3s;
 }
 
-.donate-form button:hover{
+.contact-form button:hover{
   opacity:0.9;
 }
 
-.payment-info p{
-  margin-bottom:15px;
-}
-
-.upi-btn,
-.razorpay-btn,
-.whatsapp-btn{
-  display:block;
-  text-align:center;
-  margin-top:20px;
-  padding:15px;
+.contact-whatsapp{
+  display:inline-block;
+  background:#25D366;
+  color:white;
+  padding:14px 28px;
   border-radius:50px;
   text-decoration:none;
   font-weight:600;
   transition:0.3s;
 }
 
-.upi-btn{
-  background:#16a34a;
-  color:white;
-}
-
-.razorpay-btn{
-  background:#0b4d8c;
-  color:white;
-}
-
-.whatsapp-btn{
-  background:#25D366;
-  color:white;
-}
-
-.upi-btn:hover,
-.razorpay-btn:hover,
-.whatsapp-btn:hover{
+.contact-whatsapp:hover{
   transform:translateY(-3px);
-}
-
-/* CTA */
-
-.cta{
-  background:#0b4d8c;
-  color:white;
-  text-align:center;
-  padding:90px 20px;
-}
-
-.cta h2{
-  font-size:42px;
-  margin-bottom:20px;
-}
-
-.cta p{
-  max-width:760px;
-  margin:auto;
-  margin-bottom:30px;
-}
-
-.cta a{
-  display:inline-block;
-  background:white;
-  color:#0b4d8c;
-  padding:14px 34px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:600;
-}
-
-/* FOOTER */
-
-footer{
-  background:#111827;
-  color:white;
-  text-align:center;
-  padding:35px 20px;
-}
-
-footer p{
-  margin:8px 0;
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-  nav{
-    flex-direction:column;
-    gap:15px;
+  .contact-info,
+  .contact-form{
+    padding:30px 20px;
   }
 
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-
-  .hero h1{
-    font-size:42px;
-  }
-
-  .hero p{
-    font-size:18px;
-  }
-
-  .section-title h2{
-    font-size:34px;
+  .contact-info h3,
+  .contact-form h3{
+    font-size:26px;
   }
 
 }
 
 </style>
-
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-
-<nav>
-
-  <h2>BBC Trust</h2>
-
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Programs</a></li>
-    <li><a href="#donate">Donate</a></li>
-    <li><a href="mailto:bapubhushanumcharitabletrust@gmail.com">Contact</a></li>
-  </ul>
-
-</nav>
-
-<!-- HERO -->
-
-<section class="hero">
-
-  <h1>Bapu Bhushanam Charitable Trust</h1>
-
-  <p>
-    Supporting education, healthcare, social welfare and community development initiatives across Andhra Pradesh.
-  </p>
-
-  <a href="#donate">Donate Now</a>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="container" id="about">
-
-  <div class="section-title">
-
-    <h2>Welcome To BBC Trust</h2>
-
-    <p>
-      Bapu Bhushanam Charitable Trust works towards creating positive social impact through charitable activities and community support programs.
-    </p>
-
-  </div>
-
-  <div class="about-grid">
-
-    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="BBC Trust">
-
-    <div class="about-content">
-
-      <h3>Empowering Society With Compassion</h3>
-
-      <p>
-        Our trust supports underprivileged communities through educational support, healthcare awareness programs and social welfare initiatives.
-      </p>
-
-      <p>
-        We believe in building a stronger society by helping individuals and families gain access to opportunities and essential services.
-      </p>
-
-      <p>
-        Through teamwork and public participation, BBC Trust continues to work towards meaningful and sustainable community impact.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- SERVICES -->
-
-<section class="container" id="services">
-
-  <div class="section-title">
-
-    <h2>Our Key Initiatives</h2>
-
-    <p>
-      Supporting communities through impactful charitable and welfare programs.
-    </p>
-
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card">
-      <h3>Educational Support</h3>
-      <p>
-        Educational assistance, awareness programs and learning support for students.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Healthcare Services</h3>
-      <p>
-        Health camps, medical awareness programs and healthcare support initiatives.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Social Welfare</h3>
-      <p>
-        Community welfare activities supporting families and individuals.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Community Development</h3>
-      <p>
-        Encouraging sustainable community growth through social responsibility initiatives.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- DONATE -->
-
-<section class="container" id="donate">
-
-  <div class="section-title">
-
-    <h2>Donate Now</h2>
-
-    <p>
-      Your contribution helps us continue social service and charitable activities for needy communities.
-    </p>
-
-  </div>
-
-  <div class="donate-wrapper">
-
-    <!-- FORM -->
-
-    <div class="donate-form">
-
-      <h3>Donation Form</h3>
-
-      <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
-
-        <input type="hidden" name="_subject" value="New Donation Enquiry">
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <input type="text" name="name" placeholder="Full Name" required>
-
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-
-        <input type="email" name="email" placeholder="Email Address" required>
-
-        <input type="number" name="amount" placeholder="Donation Amount" required>
-
-        <textarea name="message" rows="5" placeholder="Message"></textarea>
-
-        <button type="submit">Submit Donation Request</button>
-
-      </form>
-
-    </div>
-
-    <!-- PAYMENT -->
-
-    <div class="payment-box">
-
-      <h3>Payment Details</h3>
-
-      <div class="payment-info">
-
-        <p><strong>Bank Name:</strong> The Federal Bank</p>
-
-        <p><strong>Account Name:</strong> Malla Ramakrishna Rao</p>
-
-        <p><strong>Account Number:</strong> 12350200020879</p>
-
-        <p><strong>IFSC Code:</strong> FDRL0001235</p>
-
-        <p><strong>Google Pay / PhonePe:</strong> 9494402223</p>
-
-        <p><strong>Email:</strong> bapubhushanumcharitabletrust@gmail.com</p>
-
-      </div>
-
-      <a class="upi-btn" href="upi://pay?pa=9494402223@upi&pn=BBC Trust&cu=INR">
-        Pay Through UPI
-      </a>
-
-      <a class="razorpay-btn" href="#" onclick="openRazorpay()">
-        Donate With Razorpay
-      </a>
-
-      <a class="whatsapp-btn" href="https://wa.me/919494402223" target="_blank">
-        Contact On WhatsApp
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-
-  <h2>Together We Can Make A Difference</h2>
-
-  <p>
-    Join BBC Trust in supporting meaningful social initiatives and helping communities build a brighter future.
-  </p>
-
-  <a href="#donate">Support Our Mission</a>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-  <p>© 2026 Bapu Bhushanam Charitable Trust. All Rights Reserved.</p>
-
-  <p>Visakhapatnam, Andhra Pradesh, India</p>
-
-  <p>Email: bapubhushanumcharitabletrust@gmail.com</p>
-
-  <p>Phone: +91 9494402223</p>
-
-</footer>
-
-<!-- RAZORPAY -->
-
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
-<script>
-
-function openRazorpay(){
-
-  var options = {
-
-    "key": "YOUR_RAZORPAY_KEY_ID",
-
-    "amount": "50000",
-
-    "currency": "INR",
-
-    "name": "Bapu Bhushanam Charitable Trust",
-
-    "description": "Donation Payment",
-
-    "handler": function (response){
-
-      alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
-
-    },
-
-    "theme": {
-      "color": "#0b4d8c"
-    }
-
-  };
-
-  var rzp1 = new Razorpay(options);
-
-  rzp1.open();
-
-}
-
-</script>
-
-</body>
-</html>
