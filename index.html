@@ -7,7 +7,7 @@
 
 <title>Bapu Bhushanam Charitable Trust | Charitable Trust in Visakhapatnam</title>
 
-<meta name="description" content="Bapu Bhushanam Charitable Trust in Visakhapatnam supports education, healthcare, social welfare and community development initiatives across Andhra Pradesh.">
+<meta name="description" content="Bapu Bhushanam Charitable Trust in Visakhapatnam supports education, healthcare, food donation, orphan support, social welfare and community development initiatives across Andhra Pradesh.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -156,7 +156,7 @@ nav ul li a:hover{
   margin-bottom:20px;
 }
 
-/* CARDS */
+/* SERVICES */
 
 .card-grid{
   display:grid;
@@ -181,7 +181,46 @@ nav ul li a:hover{
   margin-bottom:15px;
 }
 
-/* DONATE SECTION */
+/* PROGRAMS */
+
+.program-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+}
+
+.program-card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 5px 18px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.program-card:hover{
+  transform:translateY(-8px);
+}
+
+.program-card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.program-content{
+  padding:28px 24px;
+}
+
+.program-content h3{
+  color:#0b4d8c;
+  margin-bottom:15px;
+}
+
+.program-content p{
+  color:#555;
+}
+
+/* DONATE */
 
 .donate-wrapper{
   display:grid;
@@ -211,7 +250,9 @@ nav ul li a:hover{
 }
 
 .donate-form input,
-.donate-form textarea{
+.donate-form textarea,
+.contact-form input,
+.contact-form textarea{
   width:100%;
   padding:15px;
   border:1px solid #ddd;
@@ -220,7 +261,8 @@ nav ul li a:hover{
   font-size:15px;
 }
 
-.donate-form button{
+.donate-form button,
+.contact-form button{
   background:#0b4d8c;
   color:white;
   border:none;
@@ -229,11 +271,6 @@ nav ul li a:hover{
   font-size:16px;
   font-weight:600;
   cursor:pointer;
-  transition:0.3s;
-}
-
-.donate-form button:hover{
-  opacity:0.9;
 }
 
 .payment-info p{
@@ -280,7 +317,6 @@ nav ul li a:hover{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:40px;
-  margin-top:50px;
 }
 
 .contact-info,
@@ -295,43 +331,14 @@ nav ul li a:hover{
 .contact-form h3{
   color:#0b4d8c;
   margin-bottom:25px;
-  font-size:30px;
 }
 
 .info-box{
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
 .info-box h4{
   color:#0b4d8c;
-  margin-bottom:8px;
-}
-
-.contact-form form{
-  display:flex;
-  flex-direction:column;
-  gap:18px;
-}
-
-.contact-form input,
-.contact-form textarea{
-  width:100%;
-  padding:15px;
-  border:1px solid #ddd;
-  border-radius:12px;
-  font-family:'Poppins',sans-serif;
-  font-size:15px;
-}
-
-.contact-form button{
-  background:#0b4d8c;
-  color:white;
-  border:none;
-  padding:15px;
-  border-radius:50px;
-  font-size:16px;
-  font-weight:600;
-  cursor:pointer;
 }
 
 /* CTA */
@@ -420,7 +427,7 @@ footer p{
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#services">Programs</a></li>
+    <li><a href="#programs">Programs</a></li>
     <li><a href="#donate">Donate</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -434,7 +441,7 @@ footer p{
   <h1>Bapu Bhushanam Charitable Trust</h1>
 
   <p>
-    Supporting education, healthcare, social welfare and community development initiatives across Andhra Pradesh.
+    Supporting education, healthcare, orphan care, food donation and social welfare initiatives across Andhra Pradesh.
   </p>
 
   <a href="#donate">Donate Now</a>
@@ -450,7 +457,7 @@ footer p{
     <h2>Welcome To BBC Trust</h2>
 
     <p>
-      Bapu Bhushanam Charitable Trust works towards creating positive social impact through charitable activities and community support programs.
+      Bapu Bhushanam Charitable Trust works towards creating positive social impact through charitable activities and community welfare programs.
     </p>
 
   </div>
@@ -464,15 +471,15 @@ footer p{
       <h3>Empowering Society With Compassion</h3>
 
       <p>
-        Our trust supports underprivileged communities through educational support, healthcare awareness programs and social welfare initiatives.
+        Our trust supports underprivileged communities through food donation, educational assistance, healthcare awareness and social welfare activities.
       </p>
 
       <p>
-        We believe in building a stronger society by helping individuals and families gain access to opportunities and essential services.
+        We believe in helping families, children and needy individuals gain access to opportunities, support and essential services.
       </p>
 
       <p>
-        Through teamwork and public participation, BBC Trust continues to work towards meaningful and sustainable community impact.
+        Through teamwork and public participation, BBC Trust continues to work towards meaningful and sustainable community development.
       </p>
 
     </div>
@@ -481,48 +488,84 @@ footer p{
 
 </section>
 
-<!-- SERVICES -->
+<!-- PROGRAMS -->
 
-<section class="container" id="services">
+<section class="container" id="programs">
 
   <div class="section-title">
 
-    <h2>Our Key Initiatives</h2>
+    <h2>Our Programs</h2>
 
     <p>
-      Supporting communities through impactful charitable and welfare programs.
+      Serving communities across Visakhapatnam through impactful charitable and welfare initiatives.
     </p>
 
   </div>
 
-  <div class="card-grid">
+  <div class="program-grid">
 
-    <div class="card">
-      <h3>Educational Support</h3>
-      <p>
-        Educational assistance, awareness programs and learning support for students.
-      </p>
+    <div class="program-card">
+
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="Orphan Support">
+
+      <div class="program-content">
+
+        <h3>Orphan Support Program</h3>
+
+        <p>
+          Supporting orphan children with food, education support, daily essentials and care programs for a better future.
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>Healthcare Services</h3>
-      <p>
-        Health camps, medical awareness programs and healthcare support initiatives.
-      </p>
+    <div class="program-card">
+
+      <img src="https://images.unsplash.com/photo-1593113598332-cd59a93f7d1d?q=80&w=1200&auto=format&fit=crop" alt="Food Donation">
+
+      <div class="program-content">
+
+        <h3>Food Donation Services</h3>
+
+        <p>
+          Conducting food distribution programs for poor families, elderly people and needy communities.
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>Social Welfare</h3>
-      <p>
-        Community welfare activities supporting families and individuals.
-      </p>
+    <div class="program-card">
+
+      <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop" alt="Education">
+
+      <div class="program-content">
+
+        <h3>Educational Assistance</h3>
+
+        <p>
+          Helping students through educational awareness, books distribution and learning support programs.
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>Community Development</h3>
-      <p>
-        Encouraging sustainable community growth through social responsibility initiatives.
-      </p>
+    <div class="program-card">
+
+      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop" alt="Medical Camps">
+
+      <div class="program-content">
+
+        <h3>Healthcare Programs</h3>
+
+        <p>
+          Organizing healthcare awareness activities, medical camps and wellness support initiatives.
+        </p>
+
+      </div>
+
     </div>
 
   </div>
@@ -538,7 +581,7 @@ footer p{
     <h2>Donate Now</h2>
 
     <p>
-      Your contribution helps us continue social service and charitable activities for needy communities.
+      Your contribution helps us continue charitable and social welfare activities for needy communities.
     </p>
 
   </div>
@@ -587,8 +630,6 @@ footer p{
 
         <p><strong>Google Pay / PhonePe:</strong> 9494402223</p>
 
-        <p><strong>Email:</strong> bapubhushanumcharitabletrust@gmail.com</p>
-
       </div>
 
       <a class="upi-btn" href="upi://pay?pa=9494402223@upi&pn=BBC Trust&cu=INR">
@@ -618,7 +659,7 @@ footer p{
     <h2>Contact Us</h2>
 
     <p>
-      Contact Bapu Bhushanam Charitable Trust for donations, volunteering and support programs.
+      Contact Bapu Bhushanam Charitable Trust for donations, volunteering and social welfare activities.
     </p>
 
   </div>
@@ -632,19 +673,13 @@ footer p{
       <div class="info-box">
         <h4>Office Address</h4>
         <p>
-          D No 3-5-4/1, Krishna Gardens,
-          Dabagardens, Visakhapatnam - 530020
+          D No 3-5-4/1, Krishna Gardens, Dabagardens, Visakhapatnam - 530020
         </p>
       </div>
 
       <div class="info-box">
-        <h4>Mobile Number</h4>
+        <h4>Phone Number</h4>
         <p>+91 9494402223</p>
-      </div>
-
-      <div class="info-box">
-        <h4>Alternate Number</h4>
-        <p>+91 9381756318</p>
       </div>
 
       <div class="info-box">
@@ -656,14 +691,6 @@ footer p{
         <h4>Office Timings</h4>
         <p>9:30 AM to 6:00 PM</p>
       </div>
-
-      <a class="whatsapp-btn"
-         href="https://wa.me/919494402223"
-         target="_blank">
-
-         Chat On WhatsApp
-
-      </a>
 
     </div>
 
@@ -706,7 +733,7 @@ footer p{
   <h2>Together We Can Make A Difference</h2>
 
   <p>
-    Join BBC Trust in supporting meaningful social initiatives and helping communities build a brighter future.
+    Join BBC Trust in helping communities build a brighter and healthier future.
   </p>
 
   <a href="#donate">Support Our Mission</a>
@@ -726,8 +753,6 @@ footer p{
   <p>Phone: +91 9494402223</p>
 
 </footer>
-
-<!-- RAZORPAY -->
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
