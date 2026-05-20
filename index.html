@@ -1,546 +1,625 @@
+<!-- PREMIUM TRUST WEBSITE VERSION -->
+<!-- Replace your entire old code with this -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bapu Bhushanam Charitable Trust | Charitable Trust in Visakhapatnam</title>
+<title>Bapu Bhushanum Charitable Trust | Charitable Trust in Visakhapatnam</title>
 
-<meta name="description" content="Bapu Bhushanam Charitable Trust in Visakhapatnam supports education, healthcare, food distribution, orphan support and social welfare activities across Andhra Pradesh.">
+<meta name="description"
+content="Bapu Bhushanum Charitable Trust in Visakhapatnam supports Annadanam, orphan support, social welfare, charity activities and community development across Andhra Pradesh.">
 
-<meta name="keywords" content="charitable trust in Visakhapatnam, NGO in Vizag, donation trust, orphan support, food distribution, healthcare support, education support trust">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#f6f7fb;
-    color:#222;
-    overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:#08111f;
+color:#fff;
+overflow-x:hidden;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 
 nav{
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:999;
-    padding:18px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(0,0,0,0.45);
-    backdrop-filter:blur(12px);
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(10px);
+z-index:999;
 }
 
-.logo{
-    color:#fff;
-    font-size:30px;
-    font-weight:700;
-    letter-spacing:1px;
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+width:65px;
+height:65px;
+object-fit:contain;
+border-radius:50%;
+background:white;
+padding:4px;
+}
+
+.logo-text{
+font-size:26px;
+font-family:'Cinzel',serif;
+font-weight:700;
+color:#ffd24d;
 }
 
 nav ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
+display:flex;
+list-style:none;
+gap:28px;
 }
 
 nav ul li a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:500;
-    transition:0.3s;
-    font-size:15px;
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
 }
 
 nav ul li a:hover{
-    color:#ffd369;
+color:#ffd24d;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
-    min-height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),
-    url('https://images.unsplash.com/photo-1469571486292-b53601020f1b?q=80&w=1600&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:120px 20px;
-    position:relative;
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),
+url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:140px 20px;
+position:relative;
 }
 
 .hero-content{
-    max-width:950px;
-    color:white;
-    animation:fadeUp 1.2s ease;
+max-width:950px;
+animation:fadeUp 1.3s ease;
 }
 
 .hero h1{
-    font-size:72px;
-    font-weight:800;
-    line-height:1.2;
-    margin-bottom:25px;
+font-size:75px;
+line-height:1.2;
+font-family:'Cinzel',serif;
+color:#ffd24d;
+margin-bottom:25px;
 }
 
 .hero p{
-    font-size:22px;
-    line-height:1.8;
-    margin-bottom:40px;
-    color:#eee;
+font-size:22px;
+line-height:1.9;
+color:#f1f1f1;
+margin-bottom:40px;
 }
 
 .hero-btns{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-    padding:16px 38px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.4s;
-    display:inline-block;
+padding:16px 38px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:0.4s;
+display:inline-block;
 }
 
 .primary-btn{
-    background:#ffd369;
-    color:#111;
+background:#ffd24d;
+color:#111;
 }
 
 .secondary-btn{
-    border:2px solid white;
-    color:white;
+border:2px solid #ffd24d;
+color:#ffd24d;
 }
 
 .btn:hover{
-    transform:translateY(-5px);
+transform:translateY(-5px);
 }
 
-/* ================= COMMON ================= */
+/* COMMON */
 
 .container{
-    width:92%;
-    max-width:1250px;
-    margin:auto;
-    padding:100px 0;
+width:92%;
+max-width:1250px;
+margin:auto;
+padding:110px 0;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:70px;
+text-align:center;
+margin-bottom:70px;
 }
 
 .section-title h2{
-    font-size:48px;
-    color:#0b4d8c;
-    margin-bottom:15px;
+font-size:48px;
+font-family:'Cinzel',serif;
+color:#ffd24d;
+margin-bottom:15px;
 }
 
 .section-title p{
-    max-width:850px;
-    margin:auto;
-    color:#666;
-    line-height:1.8;
+max-width:850px;
+margin:auto;
+line-height:1.9;
+color:#ddd;
 }
 
-/* ================= ABOUT ================= */
-
-.about{
-    background:white;
-}
+/* ABOUT */
 
 .about-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:60px;
-    align-items:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:60px;
+align-items:center;
 }
 
 .about-grid img{
-    width:100%;
-    border-radius:30px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+width:100%;
+border-radius:30px;
+box-shadow:0 10px 35px rgba(0,0,0,0.5);
 }
 
 .about-content h3{
-    font-size:42px;
-    color:#0b4d8c;
-    margin-bottom:25px;
+font-size:42px;
+color:#ffd24d;
+font-family:'Cinzel',serif;
+margin-bottom:25px;
 }
 
 .about-content p{
-    color:#555;
-    line-height:1.9;
-    margin-bottom:18px;
+line-height:1.9;
+margin-bottom:18px;
+color:#ddd;
 }
 
-/* ================= PROGRAMS ================= */
+/* FOUNDER */
 
-.programs{
-    background:#f4f7fb;
+.founder{
+background:#0d1a2d;
 }
+
+.founder-box{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:50px;
+align-items:center;
+background:rgba(255,255,255,0.03);
+padding:45px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.founder-box img{
+width:100%;
+border-radius:20px;
+border:5px solid #ffd24d;
+}
+
+.founder-content h3{
+font-size:42px;
+font-family:'Cinzel',serif;
+color:#ffd24d;
+margin-bottom:20px;
+}
+
+.founder-content h4{
+font-size:22px;
+margin-bottom:20px;
+color:#fff;
+}
+
+.founder-content p{
+line-height:1.9;
+color:#ddd;
+}
+
+/* PROGRAMS */
 
 .program-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-    gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
 .program-card{
-    background:white;
-    border-radius:25px;
-    overflow:hidden;
-    transition:0.4s;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
+background:#0d1a2d;
+border-radius:25px;
+overflow:hidden;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.08);
 }
 
 .program-card:hover{
-    transform:translateY(-10px);
+transform:translateY(-10px);
 }
 
 .program-card img{
-    width:100%;
-    height:240px;
-    object-fit:cover;
+width:100%;
+height:230px;
+object-fit:cover;
 }
 
 .program-content{
-    padding:30px;
+padding:30px;
+}
+
+.program-content i{
+font-size:40px;
+color:#ffd24d;
+margin-bottom:20px;
 }
 
 .program-content h3{
-    color:#0b4d8c;
-    margin-bottom:15px;
-    font-size:24px;
+margin-bottom:15px;
+font-size:26px;
+color:#ffd24d;
 }
 
 .program-content p{
-    color:#555;
-    line-height:1.8;
+line-height:1.8;
+color:#ddd;
 }
 
-/* ================= IMPACT ================= */
+/* COUNTERS */
 
-.impact{
-    background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
-    color:white;
+.counter-section{
+background:
+linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),
+url('https://images.unsplash.com/photo-1469571486292-b53601020f1b?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
 }
 
-.impact-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-    text-align:center;
+.counter-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:center;
 }
 
-.impact-box{
-    padding:40px 25px;
-    border-radius:25px;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(8px);
+.counter-box{
+padding:40px 20px;
+background:rgba(255,255,255,0.06);
+border-radius:25px;
+backdrop-filter:blur(6px);
 }
 
-.impact-box h3{
-    font-size:48px;
-    color:#ffd369;
-    margin-bottom:10px;
+.counter-box h3{
+font-size:52px;
+color:#ffd24d;
+margin-bottom:12px;
 }
 
-.impact-box p{
-    color:#eee;
+.counter-box p{
+color:#eee;
 }
 
-/* ================= DONATE ================= */
+/* TELUGU */
+
+.telugu{
+background:#0d1a2d;
+text-align:center;
+}
+
+.telugu-box{
+max-width:950px;
+margin:auto;
+background:rgba(255,255,255,0.04);
+padding:50px;
+border-radius:30px;
+}
+
+.telugu-box h3{
+font-size:42px;
+margin-bottom:25px;
+font-family:'Cinzel',serif;
+color:#ffd24d;
+}
+
+.telugu-box p{
+font-size:20px;
+line-height:2;
+color:#eee;
+}
+
+/* EVENTS */
+
+.events-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.event-card{
+background:#0d1a2d;
+border-radius:25px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.event-card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.event-content{
+padding:28px;
+}
+
+.event-content h3{
+color:#ffd24d;
+margin-bottom:15px;
+}
+
+.event-content p{
+line-height:1.8;
+color:#ddd;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:20px;
+transition:0.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.04);
+}
+
+/* DONATE */
 
 .donate{
-    background:white;
+background:#0d1a2d;
 }
 
 .donate-wrapper{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
 }
 
 .donate-box,
 .payment-box{
-    background:#f9fbff;
-    padding:40px;
-    border-radius:30px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.04);
+padding:40px;
+border-radius:30px;
 }
 
 .donate-box h3,
 .payment-box h3{
-    color:#0b4d8c;
-    margin-bottom:25px;
-    font-size:32px;
+font-size:34px;
+margin-bottom:25px;
+color:#ffd24d;
+font-family:'Cinzel',serif;
 }
 
 form{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
+display:flex;
+flex-direction:column;
+gap:18px;
 }
 
 form input,
 form textarea{
-    width:100%;
-    padding:17px;
-    border-radius:15px;
-    border:1px solid #d9d9d9;
-    font-size:15px;
-    font-family:'Poppins',sans-serif;
-}
-
-form textarea{
-    resize:none;
+padding:16px;
+border:none;
+border-radius:14px;
+font-size:15px;
+font-family:'Poppins',sans-serif;
 }
 
 form button{
-    background:#0b4d8c;
-    color:white;
-    border:none;
-    padding:17px;
-    border-radius:50px;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-form button:hover{
-    background:#083866;
+padding:16px;
+border:none;
+border-radius:50px;
+background:#ffd24d;
+font-weight:700;
+cursor:pointer;
 }
 
 .payment-box p{
-    margin-bottom:15px;
-    color:#444;
+margin-bottom:15px;
+line-height:1.8;
+color:#eee;
 }
 
-.payment-btn{
-    display:block;
-    text-align:center;
-    text-decoration:none;
-    padding:16px;
-    border-radius:50px;
-    margin-top:18px;
-    font-weight:600;
-    transition:0.3s;
+/* CONTACT */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
 }
 
-.upi{
-    background:#16a34a;
-    color:white;
+.contact-box{
+background:#0d1a2d;
+padding:40px;
+border-radius:30px;
 }
 
-.razor{
-    background:#0b4d8c;
-    color:white;
+.contact-box h3{
+font-size:34px;
+margin-bottom:25px;
+font-family:'Cinzel',serif;
+color:#ffd24d;
 }
 
-.whatsapp{
-    background:#25D366;
-    color:white;
+.contact-box p{
+margin-bottom:18px;
+line-height:1.8;
+color:#ddd;
 }
 
-.payment-btn:hover{
-    transform:translateY(-4px);
-}
-
-/* ================= CONTACT ================= */
-
-.contact{
-    background:#f4f7fb;
-}
-
-.contact-wrapper{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
-}
-
-.contact-info,
-.contact-form{
-    background:white;
-    padding:40px;
-    border-radius:30px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
-}
-
-.contact-info h3,
-.contact-form h3{
-    color:#0b4d8c;
-    margin-bottom:30px;
-    font-size:32px;
-}
-
-.info-box{
-    margin-bottom:25px;
-}
-
-.info-box h4{
-    color:#0b4d8c;
-    margin-bottom:8px;
-}
-
-.info-box p{
-    color:#555;
-}
-
-/* ================= CTA ================= */
-
-.cta{
-    background:
-    linear-gradient(rgba(11,77,140,0.92), rgba(11,77,140,0.92)),
-    url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=1600&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
-    text-align:center;
-    color:white;
-    padding:120px 20px;
-}
-
-.cta h2{
-    font-size:52px;
-    margin-bottom:20px;
-}
-
-.cta p{
-    max-width:850px;
-    margin:auto;
-    line-height:1.9;
-    margin-bottom:40px;
-    color:#e5eef7;
-}
-
-.cta a{
-    display:inline-block;
-    background:#ffd369;
-    color:#111;
-    text-decoration:none;
-    padding:18px 40px;
-    border-radius:50px;
-    font-weight:700;
-}
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+background:#050b14;
+text-align:center;
+padding:50px 20px;
 }
 
 footer p{
-    margin:10px 0;
-    color:#d1d5db;
+margin:10px 0;
+color:#bbb;
 }
 
-/* ================= ANIMATION ================= */
+/* WHATSAPP */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:32px;
+z-index:999;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ANIMATION */
 
 @keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:991px){
 
-    .hero h1{
-        font-size:52px;
-    }
+.hero h1{
+font-size:52px;
+}
 
-    .hero p{
-        font-size:18px;
-    }
+.hero p{
+font-size:18px;
+}
+
+.founder-box{
+grid-template-columns:1fr;
+}
 
 }
 
 @media(max-width:768px){
 
-    nav{
-        flex-direction:column;
-        gap:15px;
-        padding:18px;
-    }
+nav{
+flex-direction:column;
+gap:15px;
+padding:18px;
+}
 
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
 
-    .hero{
-        min-height:auto;
-        padding:170px 20px 120px;
-    }
+.hero{
+padding:180px 20px 120px;
+}
 
-    .hero h1{
-        font-size:40px;
-    }
+.hero h1{
+font-size:40px;
+}
 
-    .hero p{
-        font-size:16px;
-    }
+.hero p{
+font-size:16px;
+}
 
-    .hero-btns{
-        flex-direction:column;
-        align-items:center;
-    }
+.hero-btns{
+flex-direction:column;
+align-items:center;
+}
 
-    .btn{
-        width:100%;
-        max-width:280px;
-    }
+.btn{
+width:100%;
+max-width:280px;
+}
 
-    .section-title h2{
-        font-size:36px;
-    }
+.section-title h2{
+font-size:36px;
+}
 
-    .about-content h3{
-        font-size:32px;
-    }
+.about-content h3{
+font-size:32px;
+}
 
-    .cta h2{
-        font-size:36px;
-    }
+.telugu-box{
+padding:35px 25px;
+}
+
+.telugu-box p{
+font-size:17px;
+}
 
 }
 
@@ -554,15 +633,23 @@ footer p{
 
 <nav>
 
-    <div class="logo">BBC Trust</div>
+<div class="logo-area">
 
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#donate">Donate</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<img src="YOUR LOGO IMAGE PATH HERE">
+
+<div class="logo-text">BBC Trust</div>
+
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#programs">Programs</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#donate">Donate</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
 </nav>
 
@@ -570,181 +657,301 @@ footer p{
 
 <section class="hero">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-        <h1>Bapu Bhushanam Charitable Trust</h1>
+<h1>Bapu Bhushanum Charitable Trust</h1>
 
-        <p>
-            Supporting education, healthcare, orphan care, food distribution and community welfare activities across Visakhapatnam and Andhra Pradesh.
-        </p>
+<p>
+Serving humanity through Annadanam, orphan support, social welfare and charitable activities across Visakhapatnam and Andhra Pradesh.
+</p>
 
-        <div class="hero-btns">
+<div class="hero-btns">
 
-            <a href="#donate" class="btn primary-btn">Donate Now</a>
+<a href="#donate" class="btn primary-btn">Donate Now</a>
 
-            <a href="#programs" class="btn secondary-btn">Explore Programs</a>
+<a href="#about" class="btn secondary-btn">Explore More</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <!-- ABOUT -->
 
-<section class="about container" id="about">
+<section class="container" id="about">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>About BBC Trust</h2>
+<h2>About Our Trust</h2>
 
-        <p>
-            We are committed to helping poor families, orphan children, elderly people and underprivileged communities through meaningful charitable activities.
-        </p>
+<p>
+Bapu Bhushanum Charitable Trust is committed to serving poor and needy communities through compassion, social service and welfare initiatives.
+</p>
 
-    </div>
+</div>
 
-    <div class="about-grid">
+<div class="about-grid">
 
-        <img src="https://images.unsplash.com/photo-1593113598332-cd59a93d23c6?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1593113598332-cd59a93d23c6?q=80&w=1200&auto=format&fit=crop">
 
-        <div class="about-content">
+<div class="about-content">
 
-            <h3>Serving Humanity With Care & Compassion</h3>
+<h3>Helping Society With Compassion</h3>
 
-            <p>
-                Bapu Bhushanam Charitable Trust continuously works towards building a better society through food distribution, healthcare support, educational assistance and welfare activities.
-            </p>
+<p>
+Established in 2010, our trust works towards supporting underprivileged communities through Annadanam, orphan support and social welfare activities.
+</p>
 
-            <p>
-                Our mission is to bring hope and support to needy communities through social service programs and public support initiatives.
-            </p>
+<p>
+We believe that service to humanity is the highest form of spirituality and social responsibility.
+</p>
 
-            <p>
-                Together we can create positive social impact and support people who truly need help.
-            </p>
+<p>
+With public support and volunteers, our trust continues creating positive change in society.
+</p>
 
-        </div>
+</div>
 
-    </div>
+</div>
+
+</section>
+
+<!-- FOUNDER -->
+
+<section class="founder container">
+
+<div class="section-title">
+
+<h2>Founder Message</h2>
+
+</div>
+
+<div class="founder-box">
+
+<img src="YOUR FOUNDER IMAGE PATH HERE">
+
+<div class="founder-content">
+
+<h3>Malla Ramakrishna Rao</h3>
+
+<h4>Founder - Bapu Bhushanum Charitable Trust</h4>
+
+<p>
+Our mission is to serve society through compassion, humanity and charitable support activities. We strongly believe that every small helping hand can create a meaningful impact in the lives of needy people.
+</p>
+
+<p>
+Through Annadanam, orphan support and social welfare activities, our trust continuously works towards building a better and more supportive society.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- PROGRAMS -->
 
-<section class="programs container" id="programs">
+<section class="container" id="programs">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>Our Welfare Programs</h2>
+<h2>Our Welfare Programs</h2>
 
-        <p>
-            Supporting communities through social welfare and charitable development activities.
-        </p>
+<p>
+Supporting communities through meaningful social welfare and charitable initiatives.
+</p>
 
-    </div>
+</div>
 
-    <div class="program-grid">
+<div class="program-grid">
 
-        <div class="program-card">
+<div class="program-card">
 
-            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop">
 
-            <div class="program-content">
+<div class="program-content">
 
-                <h3>Food Distribution</h3>
+<i class="fa-solid fa-bowl-food"></i>
 
-                <p>
-                    Providing food support and essential supplies for poor families and homeless people.
-                </p>
+<h3>Annadanam</h3>
 
-            </div>
+<p>
+Providing food and essential support to poor families, homeless people and needy communities.
+</p>
 
-        </div>
+</div>
 
-        <div class="program-card">
+</div>
 
-            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop">
+<div class="program-card">
 
-            <div class="program-content">
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop">
 
-                <h3>Orphan Support</h3>
+<div class="program-content">
 
-                <p>
-                    Supporting orphan children with education, daily care and welfare assistance.
-                </p>
+<i class="fa-solid fa-children"></i>
 
-            </div>
+<h3>Orphan Support</h3>
 
-        </div>
+<p>
+Helping orphan children with educational support, care and daily necessities.
+</p>
 
-        <div class="program-card">
+</div>
 
-            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop">
+</div>
 
-            <div class="program-content">
+<div class="program-card">
 
-                <h3>Healthcare Support</h3>
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop">
 
-                <p>
-                    Conducting healthcare awareness camps and medical support activities.
-                </p>
+<div class="program-content">
 
-            </div>
+<i class="fa-solid fa-hand-holding-heart"></i>
 
-        </div>
+<h3>Social Welfare</h3>
 
-        <div class="program-card">
+<p>
+Conducting social welfare activities and community support initiatives across Andhra Pradesh.
+</p>
 
-            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=1200&auto=format&fit=crop">
+</div>
 
-            <div class="program-content">
+</div>
 
-                <h3>Educational Assistance</h3>
-
-                <p>
-                    Helping students with educational support and learning opportunities.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- IMPACT -->
+<!-- COUNTERS -->
 
-<section class="impact">
+<section class="counter-section">
 
-    <div class="container">
+<div class="container">
 
-        <div class="impact-grid">
+<div class="counter-grid">
 
-            <div class="impact-box">
-                <h3>500+</h3>
-                <p>Families Supported</p>
-            </div>
+<div class="counter-box">
+<h3>2010</h3>
+<p>Established</p>
+</div>
 
-            <div class="impact-box">
-                <h3>1000+</h3>
-                <p>Food Distribution Activities</p>
-            </div>
+<div class="counter-box">
+<h3>500+</h3>
+<p>Families Supported</p>
+</div>
 
-            <div class="impact-box">
-                <h3>150+</h3>
-                <p>Children Helped</p>
-            </div>
+<div class="counter-box">
+<h3>1000+</h3>
+<p>Food Distribution Activities</p>
+</div>
 
-            <div class="impact-box">
-                <h3>24/7</h3>
-                <p>Community Support</p>
-            </div>
+<div class="counter-box">
+<h3>24/7</h3>
+<p>Community Support</p>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
+
+</section>
+
+<!-- TELUGU -->
+
+<section class="telugu container">
+
+<div class="telugu-box">
+
+<h3>సేవే పరమో ధర్మః</h3>
+
+<p>
+బాపు భూషణం చారిటబుల్ ట్రస్ట్ సమాజంలోని పేద మరియు నిరుపేద ప్రజలకు అన్నదానం, అనాథల సహాయం మరియు సామాజిక సేవా కార్యక్రమాల ద్వారా సహాయం అందిస్తుంది.
+</p>
+
+</div>
+
+</section>
+
+<!-- EVENTS -->
+
+<section class="container" id="events">
+
+<div class="section-title">
+
+<h2>Upcoming Events</h2>
+
+<p>
+Participate in our social welfare and charity activities.
+</p>
+
+</div>
+
+<div class="events-grid">
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop">
+
+<div class="event-content">
+
+<h3>Annadanam Program</h3>
+
+<p>
+Monthly food distribution program for poor and needy communities.
+</p>
+
+</div>
+
+</div>
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1469571486292-b53601020f1b?q=80&w=1200&auto=format&fit=crop">
+
+<div class="event-content">
+
+<h3>Social Welfare Drive</h3>
+
+<p>
+Community support and welfare activities conducted across Visakhapatnam.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="container" id="gallery">
+
+<div class="section-title">
+
+<h2>Gallery</h2>
+
+<p>
+Our charitable activities and community support programs.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1593113598332-cd59a93d23c6?q=80&w=1200&auto=format&fit=crop">
+
+</div>
 
 </section>
 
@@ -752,166 +959,106 @@ footer p{
 
 <section class="donate container" id="donate">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>Support Our Mission</h2>
+<h2>Support Our Mission</h2>
 
-        <p>
-            Your contribution helps us continue helping poor and needy communities across Andhra Pradesh.
-        </p>
+<p>
+Your contribution helps us continue helping poor and needy communities.
+</p>
 
-    </div>
+</div>
 
-    <div class="donate-wrapper">
+<div class="donate-wrapper">
 
-        <div class="donate-box">
+<div class="donate-box">
 
-            <h3>Donation Form</h3>
+<h3>Donation Form</h3>
 
-            <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
+<form>
 
-                <input type="hidden" name="_subject" value="New Donation Request">
+<input type="text" placeholder="Full Name">
 
-                <input type="hidden" name="_captcha" value="false">
+<input type="tel" placeholder="Phone Number">
 
-                <input type="text" name="name" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address">
 
-                <input type="tel" name="phone" placeholder="Phone Number" required>
+<input type="number" placeholder="Donation Amount">
 
-                <input type="email" name="email" placeholder="Email Address" required>
+<textarea rows="5" placeholder="Message"></textarea>
 
-                <input type="number" name="amount" placeholder="Donation Amount" required>
+<button type="submit">Submit Donation</button>
 
-                <textarea name="message" rows="5" placeholder="Message"></textarea>
+</form>
 
-                <button type="submit">Submit Donation</button>
+</div>
 
-            </form>
+<div class="payment-box">
 
-        </div>
+<h3>Bank Details</h3>
 
-        <div class="payment-box">
+<p><strong>Bank Name:</strong> Federal Bank</p>
 
-            <h3>Payment Details</h3>
+<p><strong>Account Name:</strong> Malla Ramakrishna Rao</p>
 
-            <p><strong>Bank Name:</strong> The Federal Bank</p>
+<p><strong>IFSC Code:</strong> FDRL0001235</p>
 
-            <p><strong>Account Name:</strong> Malla Ramakrishna Rao</p>
+<p><strong>PhonePe / Google Pay:</strong> 9494402223</p>
 
-            <p><strong>Account Number:</strong> 12350200020879</p>
+<p><strong>Email:</strong> bapubhushanumcharitabletrust@gmail.com</p>
 
-            <p><strong>IFSC Code:</strong> FDRL0001235</p>
+</div>
 
-            <p><strong>PhonePe / Google Pay:</strong> 9494402223</p>
-
-            <p><strong>Email:</strong> bapubhushanumcharitabletrust@gmail.com</p>
-
-            <a class="payment-btn upi"
-            href="upi://pay?pa=9494402223@upi&pn=BBC Trust&cu=INR">
-            Pay Through UPI
-            </a>
-
-            <a class="payment-btn razor"
-            href="#"
-            onclick="openRazorpay()">
-            Donate With Razorpay
-            </a>
-
-            <a class="payment-btn whatsapp"
-            href="https://wa.me/919494402223"
-            target="_blank">
-            Chat On WhatsApp
-            </a>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 <!-- CONTACT -->
 
-<section class="contact container" id="contact">
+<section class="container" id="contact">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>Contact Us</h2>
+<h2>Contact Us</h2>
 
-        <p>
-            Contact Bapu Bhushanam Charitable Trust for volunteering, donations and social welfare activities.
-        </p>
+</div>
 
-    </div>
+<div class="contact-grid">
 
-    <div class="contact-wrapper">
+<div class="contact-box">
 
-        <div class="contact-info">
+<h3>Office Address</h3>
 
-            <h3>Contact Information</h3>
+<p>
+D No 3-5-4/1, Krishna Gardens,
+Dabagardens, Visakhapatnam - 530020
+</p>
 
-            <div class="info-box">
-                <h4>Office Address</h4>
-                <p>D No 3-5-4/1, Krishna Gardens, Dabagardens, Visakhapatnam - 530020</p>
-            </div>
+<p>
+Phone: +91 9494402223
+</p>
 
-            <div class="info-box">
-                <h4>Phone Number</h4>
-                <p>+91 9494402223</p>
-            </div>
+<p>
+Email: bapubhushanumcharitabletrust@gmail.com
+</p>
 
-            <div class="info-box">
-                <h4>Email Address</h4>
-                <p>bapubhushanumcharitabletrust@gmail.com</p>
-            </div>
+</div>
 
-            <div class="info-box">
-                <h4>Office Timings</h4>
-                <p>9:30 AM to 6:00 PM</p>
-            </div>
+<div class="contact-box">
 
-        </div>
+<h3>Office Timings</h3>
 
-        <div class="contact-form">
+<p>Monday to Saturday</p>
 
-            <h3>Send Message</h3>
+<p>9:30 AM to 6:00 PM</p>
 
-            <form action="https://formsubmit.co/bapubhushanumcharitabletrust@gmail.com" method="POST">
+<p>
+For donations and volunteering support please contact us directly.
+</p>
 
-                <input type="hidden" name="_subject" value="New Contact Message">
+</div>
 
-                <input type="hidden" name="_captcha" value="false">
-
-                <input type="text" name="name" placeholder="Full Name" required>
-
-                <input type="tel" name="phone" placeholder="Phone Number" required>
-
-                <input type="email" name="email" placeholder="Email Address" required>
-
-                <input type="text" name="subject" placeholder="Subject" required>
-
-                <textarea name="message" rows="6" placeholder="Message" required></textarea>
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-
-    <h2>Together We Can Change Lives</h2>
-
-    <p>
-        Join Bapu Bhushanam Charitable Trust in creating positive social impact through charity, compassion and community support.
-    </p>
-
-    <a href="#donate">Donate Today</a>
+</div>
 
 </section>
 
@@ -919,55 +1066,22 @@ footer p{
 
 <footer>
 
-    <p>© 2026 Bapu Bhushanam Charitable Trust. All Rights Reserved.</p>
+<p>© 2026 Bapu Bhushanum Charitable Trust. All Rights Reserved.</p>
 
-    <p>Visakhapatnam, Andhra Pradesh, India</p>
-
-    <p>Email: bapubhushanumcharitabletrust@gmail.com</p>
-
-    <p>Phone: +91 9494402223</p>
+<p>Visakhapatnam, Andhra Pradesh, India</p>
 
 </footer>
 
-<!-- RAZORPAY -->
+<!-- WHATSAPP -->
 
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<a href="https://wa.me/919494402223"
+class="whatsapp-float"
+target="_blank">
 
-<script>
+<i class="fab fa-whatsapp"></i>
 
-function openRazorpay(){
-
-    var options = {
-
-        "key": "YOUR_RAZORPAY_KEY_ID",
-
-        "amount": "50000",
-
-        "currency": "INR",
-
-        "name": "Bapu Bhushanam Charitable Trust",
-
-        "description": "Donation Payment",
-
-        "handler": function (response){
-
-            alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
-
-        },
-
-        "theme": {
-            "color": "#0b4d8c"
-        }
-
-    };
-
-    var rzp1 = new Razorpay(options);
-
-    rzp1.open();
-
-}
-
-</script>
+</a>
 
 </body>
+
 </html>
